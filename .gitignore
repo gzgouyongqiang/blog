@@ -1,0 +1,13 @@
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# 生成脚本（本地用，不上仓库）
+_gen_placeholder.py
+
+# Python
+__pycache__/
+*.pyc
