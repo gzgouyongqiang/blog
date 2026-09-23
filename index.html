@@ -3,34 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>永好游记 | 走过的路，看过的风景</title>
-<meta name="description" content="旅行照片与随想记录">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+<title>山高路远，家在身边</title>
+<meta name="description" content="一家人的旅行记录 — 走过的路，看过的风景，和身边的人">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='88'>⛰</text></svg>">
 <link rel="stylesheet" href="assets/blog.css">
 </head>
 <body>
 
-<!-- 导航 -->
 <nav class="nav">
-  <a href="index.html" class="nav-logo">
-    <span class="dot"></span>永好游记
-  </a>
+  <a href="index.html" class="nav-logo">山高路远，家在身边</a>
   <div class="nav-links">
-    <a href="#photos">照片墙</a>
+    <a href="#photos">相册</a>
     <a href="#notes">随想</a>
-    <a href="https://hxbnx.bbroot.com" target="_blank" rel="noopener">化学不难学 ↗</a>
+    <a href="https://hxbnx.bbroot.com" target="_blank" rel="noopener">化学不难学</a>
   </div>
 </nav>
 
-<!-- 封面 -->
 <header class="hero">
-  <div class="hero-badge">🧭 旅途记录</div>
-  <h1 class="hero-title">走过的路，看过的风景</h1>
-  <p class="hero-sub">用镜头留住远方的样子，用文字记住当时的心情</p>
-  <div class="hero-line"></div>
+  <div class="hero-en">Family Travelogue</div>
+  <h1 class="hero-title">山高路远，家在身边</h1>
+  <div class="hero-divider"></div>
+  <p class="hero-sub">
+    走过的路，看过的风景<br>
+    最重要的是一起看风景的人
+  </p>
 </header>
 
-<!-- 统计 -->
 <div class="stats">
   <div class="stat">
     <div class="stat-num" id="statPhotos">0</div>
@@ -38,7 +36,7 @@
   </div>
   <div class="stat">
     <div class="stat-num" id="statPlaces">0</div>
-    <div class="stat-label">去过的地</div>
+    <div class="stat-label">去过的地方</div>
   </div>
   <div class="stat">
     <div class="stat-num" id="statNotes">0</div>
@@ -46,34 +44,33 @@
   </div>
 </div>
 
-<!-- 照片墙 -->
 <section class="section" id="photos">
   <div class="section-head">
-    <h2 class="section-title">照片墙</h2>
-    <span class="section-desc">点开看大图</span>
+    <div class="section-en">Album</div>
+    <h2 class="section-title">相册</h2>
   </div>
   <div class="photo-grid" id="photoGrid"></div>
 </section>
 
-<!-- 随想 -->
 <section class="section" id="notes">
   <div class="section-head">
+    <div class="section-en">Notes</div>
     <h2 class="section-title">随想</h2>
-    <span class="section-desc">路上的零碎想法</span>
   </div>
   <div class="notes" id="noteList"></div>
 </section>
 
-<!-- 页脚 -->
 <footer class="footer">
-  永好游记 · yonghaihao.ccwu.cc<br>
-  <span style="font-size:12px;opacity:.8;">另有教学站点：<a href="https://hxbnx.bbroot.com" target="_blank" rel="noopener">化学不难学</a></span>
+  山高路远，家在身边<br>
+  <span style="font-size:12px;opacity:.85;">
+    <a href="https://hxbnx.bbroot.com" target="_blank" rel="noopener">化学不难学</a>
+  </span>
 </footer>
 
-<!-- 灯箱 -->
 <div class="lightbox" id="lightbox">
-  <span class="lightbox-close">×</span>
+  <span class="lightbox-close">✕</span>
   <img id="lightboxImg" alt="">
+  <div class="lightbox-cap" id="lightboxCap"></div>
 </div>
 
 <script src="assets/blog.js"></script>
