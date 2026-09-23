@@ -205,7 +205,7 @@
     document.title = (t.title || '行程') + ' · 山高路远，家在身边';
 
     var cover = document.getElementById('tCover');
-    if (cover) { cover.src = t.cover || ''; cover.alt = t.title || ''; }
+    if (cover) { cover.src = t.coverBig || t.cover || ''; cover.alt = t.title || ''; }
 
     document.getElementById('tDate').textContent  = t.date || '';
     document.getElementById('tTitle').textContent = t.title || '';

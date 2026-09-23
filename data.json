@@ -20,6 +20,7 @@
       "title": "围龙屋与海",
       "subtitle": "梅州 · 围龙屋　→　漳州 · 海",
       "cover": "assets/photos/meizhou2020/t/10.jpg",
+      "coverBig": "assets/photos/meizhou2020/10.jpg",
       "lead": [
         "春节出门，往南走。先看老屋，再看海。",
         "围龙屋的门楣上挂着匾，门两边各有一条长凳，像是专为歇脚的人备下的。海边的风大，礁石是红的，岸边停着一排帆船。",
@@ -133,6 +134,7 @@
       "title": "六月的绿",
       "subtitle": "天山天池 · 那拉提草原 · 赛里木湖",
       "cover": "assets/photos/xinjiang2019/t/10.jpg",
+      "coverBig": "assets/photos/xinjiang2019/10.jpg",
       "lead": [
         "六月中旬，从天池一路向西。",
         "湖水是墨绿的，草原是嫩绿的，最后一天在赛里木湖，蓝一直铺到天边。三天，三种绿。",
