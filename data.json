@@ -1,23 +1,104 @@
 {
-  "_说明": "所有内容都在这个文件里。加照片：把图片放进 assets/photos/，然后在 photos 数组加一条。",
-  "photos": [
+  "_说明": "全站内容数据源。新增一次旅行：把照片放进 assets/photos/<行程id>/，然后在 trips 数组里加一条即可，不需要改 HTML。",
+
+  "site": {
+    "title": "山高路远，家在身边",
+    "en": "Family Travelogue",
+    "sub": [
+      "走过的路，看过的风景",
+      "最重要的是一起看风景的人"
+    ]
+  },
+
+  "trips": [
     {
-      "src": "assets/photos/sample-1.jpg",
-      "place": "示例地点",
-      "caption": "这是第一张示例照片",
-      "note": "把这张换成家人的合影，改掉这里的文字就好。"
-    },
-    {
-      "src": "assets/photos/sample-2.jpg",
-      "place": "示例地点",
-      "caption": "再来一张示例",
-      "note": "多张照片会自动排成相册，手机上两列显示。"
+      "id": "xinjiang2019",
+      "year": "2019",
+      "date": "2019.06.13 — 06.15",
+      "dateShort": "06.13 — 06.15",
+      "place": "新疆",
+      "title": "六月的绿",
+      "subtitle": "天山天池 · 那拉提草原 · 赛里木湖",
+      "cover": "assets/photos/xinjiang2019/t/10.jpg",
+      "lead": [
+        "六月中旬，从天池一路向西。",
+        "湖水是墨绿的，草原是嫩绿的，最后一天在赛里木湖，蓝一直铺到天边。三天，三种绿。",
+        "照片是相机拍的，没有滤镜——那里的颜色本来就这样。"
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/xinjiang2019/01.jpg",
+          "thumb": "assets/photos/xinjiang2019/t/01.jpg",
+          "orient": "portrait",
+          "caption": "天池 · 湖畔",
+          "note": "经幡在风里飘了一整天。雪线还没退，山就那么站着。"
+        },
+        {
+          "src": "assets/photos/xinjiang2019/02.jpg",
+          "thumb": "assets/photos/xinjiang2019/t/02.jpg",
+          "orient": "portrait",
+          "caption": "天池 · 东岸",
+          "note": "云杉长在岩壁上，水绿得不像话。"
+        },
+        {
+          "src": "assets/photos/xinjiang2019/03.jpg",
+          "thumb": "assets/photos/xinjiang2019/t/03.jpg",
+          "orient": "landscape",
+          "caption": "那拉提 · 牧场",
+          "note": "坡上那间小房子，烟囱没冒烟。羊群撒了一地。"
+        },
+        {
+          "src": "assets/photos/xinjiang2019/04.jpg",
+          "thumb": "assets/photos/xinjiang2019/t/04.jpg",
+          "orient": "portrait",
+          "caption": "那拉提 · 一棵树",
+          "note": "草原上就它一棵，站得端端正正。树下一条小溪，水底的石头被冲得发白。"
+        },
+        {
+          "src": "assets/photos/xinjiang2019/05.jpg",
+          "thumb": "assets/photos/xinjiang2019/t/05.jpg",
+          "orient": "landscape",
+          "caption": "去那拉提的路上",
+          "note": "路笔直地伸进绿色里。谁都没说话，车里只有风声。"
+        },
+        {
+          "src": "assets/photos/xinjiang2019/06.jpg",
+          "thumb": "assets/photos/xinjiang2019/t/06.jpg",
+          "orient": "landscape",
+          "caption": "让路",
+          "note": "羊群横穿公路，车停下来。等了足有十分钟，没有一个人按喇叭。"
+        },
+        {
+          "src": "assets/photos/xinjiang2019/07.jpg",
+          "thumb": "assets/photos/xinjiang2019/t/07.jpg",
+          "orient": "landscape",
+          "caption": "那拉提 · 云杉",
+          "note": "云杉一棵挨一棵，把山坡盖得严严实实。"
+        },
+        {
+          "src": "assets/photos/xinjiang2019/08.jpg",
+          "thumb": "assets/photos/xinjiang2019/t/08.jpg",
+          "orient": "landscape",
+          "caption": "那拉提 · 花甸",
+          "note": "草地开满了蒲公英，风一吹就散。"
+        },
+        {
+          "src": "assets/photos/xinjiang2019/09.jpg",
+          "thumb": "assets/photos/xinjiang2019/t/09.jpg",
+          "orient": "landscape",
+          "caption": "蒲公英",
+          "note": "凑近才看见，每一朵都举着一个小小的太阳。"
+        },
+        {
+          "src": "assets/photos/xinjiang2019/10.jpg",
+          "thumb": "assets/photos/xinjiang2019/t/10.jpg",
+          "orient": "landscape",
+          "caption": "赛里木湖",
+          "note": "水清得能数清湖底的石头。远处的雪山和云连在一起，分不出边界。"
+        }
+      ]
     }
   ],
-  "notes": [
-    {
-      "date": "2026-09-23",
-      "text": "这是随想区的第一条记录。一路上想说的话写在这里，像日记一样一条条往上加，最新的会排在最上面。"
-    }
-  ]
+
+  "notes": []
 }
