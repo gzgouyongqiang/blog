@@ -69,12 +69,13 @@
       (byYear[y] = byYear[y] || []).push(t);
     });
 
-    var years = Object.keys(byYear).sort(function (a, b) { return b - a; });
+    /* 年份从早到晚：这是一本家庭史，从第一次出门开始往后读 */
+    var years = Object.keys(byYear).sort(function (a, b) { return a - b; });
     var html = '';
 
     years.forEach(function (y) {
       var list = byYear[y].slice().sort(function (a, b) {
-        return String(b.date || '').localeCompare(String(a.date || ''));
+        return String(a.date || '').localeCompare(String(b.date || ''));
       });
 
       html +=
@@ -156,6 +157,7 @@
   }
 
   var LAYOUT_CLASS = {
+    hero:   'f-hero',
     full:   'f-full',
     center: 'f-center',
     narrow: 'f-narrow',
@@ -231,9 +233,9 @@
       });
     }
 
-    /* --- 上一段 / 下一段（数组按新→旧） --- */
-    var prev = idx + 1 < trips.length ? trips[idx + 1] : null;
-    var next = idx - 1 >= 0 ? trips[idx - 1] : null;
+    /* --- 上一段 / 下一段（数组按时间从早到晚） --- */
+    var prev = idx - 1 >= 0 ? trips[idx - 1] : null;
+    var next = idx + 1 < trips.length ? trips[idx + 1] : null;
     var parts = [];
     parts.push(prev
       ? '<a href="trip.html?id=' + encodeURIComponent(prev.id) + '">← ' + esc(prev.title) + '</a>'
@@ -254,6 +256,11 @@
   /* 取数据：线上优先读 data.json（改了立刻生效）；
      本地双击打开时 file:// 禁止 fetch，自动回落到 assets/data.js 内联数据。 */
   function loadData() {
+    /* 本地双击打开是 file:// 协议，浏览器直接禁止 fetch 本地文件，
+       干脆不发这个请求，免得控制台一片红 —— 直接用内联数据。 */
+    if (location.protocol === 'file:' && window.__BLOG_DATA__) {
+      return Promise.resolve(window.__BLOG_DATA__);
+    }
     return fetch('data.json?v=' + Date.now())
       .then(function (r) {
         if (!r.ok) throw new Error('读取失败 (' + r.status + ')');

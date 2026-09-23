@@ -12,6 +12,202 @@ window.__BLOG_DATA__ = {
   },
   "trips": [
     {
+      "id": "hailing2004",
+      "year": "2004",
+      "date": "2004.10.16",
+      "dateShort": "10.16",
+      "place": "阳江 · 海陵岛",
+      "title": "第一次出门",
+      "subtitle": "第一次看见海",
+      "cover": "assets/photos/hailing2004/t/01.jpg",
+      "coverBig": "assets/photos/hailing2004/cover.jpg",
+      "lead": [
+        "这是我们全家第一次从老家出来。目的地，阳江的海陵岛。",
+        "海是第一次见。原来水可以大得看不见边，也可以响成那样。",
+        "相机上的日期一直没调对，这些照片在电脑里都显示成 2002 年。真正的那一天，是 2004 年 10 月 16 日。"
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/hailing2004/01.jpg",
+          "thumb": "assets/photos/hailing2004/t/01.jpg",
+          "orient": "landscape",
+          "layout": "hero",
+          "caption": "我们仨的第一张合影",
+          "note": "2004 年 10 月 16 日。第一次从老家出来，第一次看见海——母亲戴一顶白帽子，父亲穿一件蓝 T 恤，孩子站在中间，刚戴上他的红帽子。"
+        },
+        {
+          "src": "assets/photos/hailing2004/02.jpg",
+          "thumb": "assets/photos/hailing2004/t/02.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "同一个山头上",
+          "note": "同一天、同一个位置，同行的几位也留了一张。父亲站在最左边。"
+        },
+        {
+          "src": "assets/photos/hailing2004/03.jpg",
+          "thumb": "assets/photos/hailing2004/t/03.jpg",
+          "orient": "landscape",
+          "layout": "center",
+          "caption": "大角湾的门口",
+          "note": "石墙上写着「国家AAAA级 大角湾」。孩子怀里抱着那只救生圈。"
+        },
+        {
+          "src": "assets/photos/hailing2004/04.jpg",
+          "thumb": "assets/photos/hailing2004/t/04.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "雕塑前面",
+          "note": "海边立着一座浪花托着海豚的雕塑，后面就是沙滩和大角湾。"
+        },
+        {
+          "src": "assets/photos/hailing2004/05.jpg",
+          "thumb": "assets/photos/hailing2004/t/05.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "第一次踩到海水",
+          "note": "相机把日期直接印在了画面上：2004.10.16。孩子站在浅水里，手里还拎着救生圈。"
+        },
+        {
+          "src": "assets/photos/hailing2004/06.jpg",
+          "thumb": "assets/photos/hailing2004/t/06.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "妈妈寸步不离",
+          "note": "一层层的浪推上来。孩子坐在圈里，母亲站在水里，一步都没走远。"
+        },
+        {
+          "src": "assets/photos/hailing2004/07.jpg",
+          "thumb": "assets/photos/hailing2004/t/07.jpg",
+          "orient": "landscape",
+          "layout": "left",
+          "caption": "三个人都在浪里",
+          "note": "浪花把海水搅成白的。三个人的裤子都湿透了。"
+        },
+        {
+          "src": "assets/photos/hailing2004/08.jpg",
+          "thumb": "assets/photos/hailing2004/t/08.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "蹲下来护着他",
+          "note": "两个人一起蹲进水里，扶着那只救生圈，等下一波浪过去。"
+        },
+        {
+          "src": "assets/photos/hailing2004/09.jpg",
+          "thumb": "assets/photos/hailing2004/t/09.jpg",
+          "orient": "landscape",
+          "layout": "right",
+          "caption": "一个浪打过来",
+          "note": "孩子被浪推得仰起脸，救生圈差点翻过来。"
+        },
+        {
+          "src": "assets/photos/hailing2004/10.jpg",
+          "thumb": "assets/photos/hailing2004/t/10.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "那天下午的海",
+          "note": "涨潮前的海滩。玩了一下午，还是舍不得走。"
+        }
+      ]
+    },
+    {
+      "id": "xinjiang2019",
+      "year": "2019",
+      "date": "2019.06.13 — 06.15",
+      "dateShort": "06.13 — 06.15",
+      "place": "新疆",
+      "title": "六月的绿",
+      "subtitle": "天山天池 · 那拉提草原 · 赛里木湖",
+      "cover": "assets/photos/xinjiang2019/t/10.jpg",
+      "coverBig": "assets/photos/xinjiang2019/10.jpg",
+      "lead": [
+        "六月中旬，从天池一路向西。",
+        "湖水是墨绿的，草原是嫩绿的，最后一天在赛里木湖，蓝一直铺到天边。三天，三种绿。",
+        "照片是相机拍的，没有滤镜——那里的颜色本来就这样。"
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/xinjiang2019/01.jpg",
+          "thumb": "assets/photos/xinjiang2019/t/01.jpg",
+          "orient": "portrait",
+          "layout": "center",
+          "caption": "天池 · 湖畔",
+          "note": "经幡在风里飘了一整天。雪线还没退，山就那么站着。"
+        },
+        {
+          "src": "assets/photos/xinjiang2019/02.jpg",
+          "thumb": "assets/photos/xinjiang2019/t/02.jpg",
+          "orient": "portrait",
+          "layout": "duo",
+          "caption": "天池 · 东岸",
+          "note": "云杉长在岩壁上，水绿得不像话。"
+        },
+        {
+          "src": "assets/photos/xinjiang2019/03.jpg",
+          "thumb": "assets/photos/xinjiang2019/t/03.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "那拉提 · 牧场",
+          "note": "坡上那间小房子，烟囱没冒烟。羊群撒了一地。"
+        },
+        {
+          "src": "assets/photos/xinjiang2019/04.jpg",
+          "thumb": "assets/photos/xinjiang2019/t/04.jpg",
+          "orient": "portrait",
+          "layout": "full",
+          "caption": "那拉提 · 一棵树",
+          "note": "草原上就它一棵，站得端端正正。树下一条小溪，水底的石头被冲得发白。"
+        },
+        {
+          "src": "assets/photos/xinjiang2019/05.jpg",
+          "thumb": "assets/photos/xinjiang2019/t/05.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "去那拉提的路上",
+          "note": "路笔直地伸进绿色里。谁都没说话，车里只有风声。"
+        },
+        {
+          "src": "assets/photos/xinjiang2019/06.jpg",
+          "thumb": "assets/photos/xinjiang2019/t/06.jpg",
+          "orient": "landscape",
+          "layout": "center",
+          "caption": "让路",
+          "note": "羊群横穿公路，车停下来。等了足有十分钟，没有一个人按喇叭。"
+        },
+        {
+          "src": "assets/photos/xinjiang2019/07.jpg",
+          "thumb": "assets/photos/xinjiang2019/t/07.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "那拉提 · 云杉",
+          "note": "云杉一棵挨一棵，把山坡盖得严严实实。"
+        },
+        {
+          "src": "assets/photos/xinjiang2019/08.jpg",
+          "thumb": "assets/photos/xinjiang2019/t/08.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "那拉提 · 花甸",
+          "note": "草地开满了蒲公英，风一吹就散。"
+        },
+        {
+          "src": "assets/photos/xinjiang2019/09.jpg",
+          "thumb": "assets/photos/xinjiang2019/t/09.jpg",
+          "orient": "landscape",
+          "layout": "left",
+          "caption": "蒲公英",
+          "note": "凑近才看见，每一朵都举着一个小小的太阳。"
+        },
+        {
+          "src": "assets/photos/xinjiang2019/10.jpg",
+          "thumb": "assets/photos/xinjiang2019/t/10.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "赛里木湖",
+          "note": "水清得能数清湖底的石头。远处的雪山和云连在一起，分不出边界。"
+        }
+      ]
+    },
+    {
       "id": "meizhou2020",
       "year": "2020",
       "date": "2020.01.22 — 01.29",
@@ -122,104 +318,6 @@ window.__BLOG_DATA__ = {
           "layout": "full",
           "caption": "回程",
           "note": "码头上风大，旗子被吹得笔直。该回家了。"
-        }
-      ]
-    },
-    {
-      "id": "xinjiang2019",
-      "year": "2019",
-      "date": "2019.06.13 — 06.15",
-      "dateShort": "06.13 — 06.15",
-      "place": "新疆",
-      "title": "六月的绿",
-      "subtitle": "天山天池 · 那拉提草原 · 赛里木湖",
-      "cover": "assets/photos/xinjiang2019/t/10.jpg",
-      "coverBig": "assets/photos/xinjiang2019/10.jpg",
-      "lead": [
-        "六月中旬，从天池一路向西。",
-        "湖水是墨绿的，草原是嫩绿的，最后一天在赛里木湖，蓝一直铺到天边。三天，三种绿。",
-        "照片是相机拍的，没有滤镜——那里的颜色本来就这样。"
-      ],
-      "photos": [
-        {
-          "src": "assets/photos/xinjiang2019/01.jpg",
-          "thumb": "assets/photos/xinjiang2019/t/01.jpg",
-          "orient": "portrait",
-          "layout": "center",
-          "caption": "天池 · 湖畔",
-          "note": "经幡在风里飘了一整天。雪线还没退，山就那么站着。"
-        },
-        {
-          "src": "assets/photos/xinjiang2019/02.jpg",
-          "thumb": "assets/photos/xinjiang2019/t/02.jpg",
-          "orient": "portrait",
-          "layout": "duo",
-          "caption": "天池 · 东岸",
-          "note": "云杉长在岩壁上，水绿得不像话。"
-        },
-        {
-          "src": "assets/photos/xinjiang2019/03.jpg",
-          "thumb": "assets/photos/xinjiang2019/t/03.jpg",
-          "orient": "landscape",
-          "layout": "duo",
-          "caption": "那拉提 · 牧场",
-          "note": "坡上那间小房子，烟囱没冒烟。羊群撒了一地。"
-        },
-        {
-          "src": "assets/photos/xinjiang2019/04.jpg",
-          "thumb": "assets/photos/xinjiang2019/t/04.jpg",
-          "orient": "portrait",
-          "layout": "full",
-          "caption": "那拉提 · 一棵树",
-          "note": "草原上就它一棵，站得端端正正。树下一条小溪，水底的石头被冲得发白。"
-        },
-        {
-          "src": "assets/photos/xinjiang2019/05.jpg",
-          "thumb": "assets/photos/xinjiang2019/t/05.jpg",
-          "orient": "landscape",
-          "layout": "full",
-          "caption": "去那拉提的路上",
-          "note": "路笔直地伸进绿色里。谁都没说话，车里只有风声。"
-        },
-        {
-          "src": "assets/photos/xinjiang2019/06.jpg",
-          "thumb": "assets/photos/xinjiang2019/t/06.jpg",
-          "orient": "landscape",
-          "layout": "center",
-          "caption": "让路",
-          "note": "羊群横穿公路，车停下来。等了足有十分钟，没有一个人按喇叭。"
-        },
-        {
-          "src": "assets/photos/xinjiang2019/07.jpg",
-          "thumb": "assets/photos/xinjiang2019/t/07.jpg",
-          "orient": "landscape",
-          "layout": "duo",
-          "caption": "那拉提 · 云杉",
-          "note": "云杉一棵挨一棵，把山坡盖得严严实实。"
-        },
-        {
-          "src": "assets/photos/xinjiang2019/08.jpg",
-          "thumb": "assets/photos/xinjiang2019/t/08.jpg",
-          "orient": "landscape",
-          "layout": "duo",
-          "caption": "那拉提 · 花甸",
-          "note": "草地开满了蒲公英，风一吹就散。"
-        },
-        {
-          "src": "assets/photos/xinjiang2019/09.jpg",
-          "thumb": "assets/photos/xinjiang2019/t/09.jpg",
-          "orient": "landscape",
-          "layout": "left",
-          "caption": "蒲公英",
-          "note": "凑近才看见，每一朵都举着一个小小的太阳。"
-        },
-        {
-          "src": "assets/photos/xinjiang2019/10.jpg",
-          "thumb": "assets/photos/xinjiang2019/t/10.jpg",
-          "orient": "landscape",
-          "layout": "full",
-          "caption": "赛里木湖",
-          "note": "水清得能数清湖底的石头。远处的雪山和云连在一起，分不出边界。"
         }
       ]
     }

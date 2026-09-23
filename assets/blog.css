@@ -249,6 +249,18 @@ img { display: block; max-width: 100%; height: auto; }
   column-gap: var(--gap); align-items: start;
 }
 
+/* 重点照片：白边纸感大头图 + 居中大字图注（一段行程的定性之作）*/
+.f-hero { grid-column: 1 / -1; }
+.f-hero .flow-pic {
+  border: 12px solid #fff;
+  box-shadow: 0 30px 64px -34px rgba(58, 48, 34, .55), 0 1px 0 rgba(58, 48, 34, .07);
+}
+.f-hero .flow-cap { max-width: 640px; margin: 32px auto 0; text-align: center; }
+.f-hero .flow-cap-head { display: block; }
+.f-hero .flow-cap-no { display: block; margin-bottom: 12px; letter-spacing: .34em; }
+.f-hero .flow-cap-main { display: block; font-size: 23px; letter-spacing: .24em; line-height: 1.62; }
+.f-hero .flow-cap-note { padding-left: 0; margin-top: 16px; text-align: center; }
+
 /* --- 单张照片 --- */
 .flow-item { margin: 0; }
 .flow-pic { overflow: hidden; background: var(--paper-warm); cursor: zoom-in; }
@@ -359,6 +371,8 @@ img { display: block; max-width: 100%; height: auto; }
   .f-full, .f-center, .f-narrow, .f-left, .f-right { grid-column: 1 / -1; }
   .f-aside .flow-item { grid-template-columns: 1fr; row-gap: 16px; }
   .f-duo { grid-template-columns: 1fr; row-gap: 44px; }
+  .f-hero .flow-pic { border-width: 7px; }
+  .f-hero .flow-cap-main { font-size: 19px; letter-spacing: .18em; }
   .is-portrait .flow-pic img { max-height: none; width: 100%; }
   .flow-cap-note { padding-left: 0; }
   .trip-end { flex-direction: column; align-items: flex-start; gap: 14px; }
