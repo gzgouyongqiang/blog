@@ -8,7 +8,6 @@
   'use strict';
 
   var timeline = document.getElementById('timeline');
-  var noteList = document.getElementById('noteList');
   var flow     = document.getElementById('flow');
 
   /* ---------- 工具 ---------- */
@@ -103,24 +102,7 @@
     timeline.innerHTML = html;
   }
 
-  function renderNotes(notes) {
-    if (!noteList) return;
-    if (!notes || !notes.length) {
-      noteList.innerHTML = empty('— — —', '还没有写下什么');
-      return;
-    }
-    var html = '';
-    notes.slice().reverse().forEach(function (n) {
-      html +=
-        '<div class="note-item">' +
-          (n.date ? '<div class="note-date">' + esc(n.date) + '</div>' : '') +
-          '<div class="note-text">' + esc(n.text) + '</div>' +
-        '</div>';
-    });
-    noteList.innerHTML = html;
-  }
-
-  function renderStats(trips, notes) {
+  function renderStats(trips) {
     var photos = 0, places = {};
     (trips || []).forEach(function (t) {
       photos += (t.photos || []).length;
@@ -241,8 +223,7 @@
     .then(function (data) {
       if (timeline) {
         renderTimeline(data.trips);
-        renderNotes(data.notes);
-        renderStats(data.trips, data.notes);
+        renderStats(data.trips);
       }
       if (flow) {
         renderTrip(data, param('id'));
