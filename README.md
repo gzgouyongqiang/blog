@@ -1,6 +1,6 @@
-# 永好游记
+# 山高路远，家在身边
 
-旅行照片与随想的静态博客。
+一家人的旅行记录 — 照片与随想。
 线上地址：**https://yonghaihao.ccwu.cc**
 
 ---
@@ -11,15 +11,17 @@
 
 ### 加一张照片
 
-1. 把图片放进 `assets/photos/` 文件夹（建议先压缩到 300KB 以内，加载快）
+1. 把图片放进 `assets/photos/` 文件夹
+   - 建议宽度 1600px 以内、压缩到 400KB 以下，加载更快
+   - 手机拍的照片直接用也行，稍大一点无妨
 2. 打开 `data.json`，在 `photos` 数组里加一条：
 
 ```json
 {
   "src": "assets/photos/你的文件名.jpg",
-  "place": "📍 地点名",
-  "caption": "一句话标题",
-  "note": "更长的感想，可留空"
+  "place": "地点名",
+  "caption": "照片标题",
+  "note": "想说的话，可留空"
 }
 ```
 
@@ -36,19 +38,16 @@
 
 > 随想按时间倒序显示，最新的在最上面。
 
----
-
-## 推送上线
-
-改完以后，让 AI 助手推送即可，或手动执行：
+### 改完推送
 
 ```bash
-python "C:/Users/Administrator/.workbuddy/skills/git-push-hxbnx/scripts/git_push.py" \
-  "C:/Users/Administrator/blog_repo" \
-  "更新照片" \
-  index.html data.json assets/blog.css assets/blog.js \
-  assets/photos/新图片.jpg
+cd C:\Users\Administrator\blog_repo
+git add -A
+git commit -m "更新照片"
+git push origin main
 ```
+
+或者直接跟小烧杯说「推送到博客」。
 
 ---
 
@@ -67,10 +66,17 @@ python "C:/Users/Administrator/.workbuddy/skills/git-push-hxbnx/scripts/git_push
 ```
 blog_repo/
 ├── index.html              页面结构
-├── data.json               ★ 内容数据（改这里）
+├── data.json               ★ 内容数据（只改这里）
 ├── CNAME                   自定义域名
+├── README.md               本说明
 └── assets/
-    ├── blog.css            样式
+    ├── blog.css            日系胶片感样式
     ├── blog.js             渲染脚本
     └── photos/             照片存放处
 ```
+
+## 设计说明
+
+- **风格**：日系胶片感 — 米白纸底、大留白、细衬线标题、照片轻微降饱和暖调
+- **标题**：《山高路远，家在身边》
+- **定位**：完全公开，任何人可访问
