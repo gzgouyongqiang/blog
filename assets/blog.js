@@ -251,11 +251,24 @@
   /* ============================================
      启动
      ============================================ */
-  fetch('data.json?v=' + Date.now())
-    .then(function (r) {
-      if (!r.ok) throw new Error('读取失败 (' + r.status + ')');
-      return r.json();
-    })
+  /* 取数据：线上优先读 data.json（改了立刻生效）；
+     本地双击打开时 file:// 禁止 fetch，自动回落到 assets/data.js 内联数据。 */
+  function loadData() {
+    return fetch('data.json?v=' + Date.now())
+      .then(function (r) {
+        if (!r.ok) throw new Error('读取失败 (' + r.status + ')');
+        return r.json();
+      })
+      .catch(function (err) {
+        if (window.__BLOG_DATA__) {
+          console.warn('data.json 读取失败，改用本地内联数据：' + err.message);
+          return window.__BLOG_DATA__;
+        }
+        throw err;
+      });
+  }
+
+  loadData()
     .then(function (data) {
       if (timeline) {
         renderTimeline(data.trips);

@@ -19,6 +19,19 @@
 
 所有内容都在 **`data.json`** 里。
 
+> ⚠️ **改完 data.json 记得同步一份给本地预览用**：
+> ```bash
+> cd C:\Users\Administrator\blog_repo
+> python tools/sync_data.py
+> ```
+> 这一步生成 `assets/data.js`。原因是：本地双击 `index.html` 时浏览器是 `file://` 协议，
+> 禁止网页读取本地 `data.json`，页面会一片空白（照片全不显示）；`data.js` 是同一份数据的内联版，专门兜底。
+> 线上（https）不受影响，永远优先读 `data.json`。
+
+### 本地预览
+
+双击 `index.html` 即可看效果。若照片不显示，说明忘了跑上面的 `sync_data.py`。
+
 ### 加一段行程
 
 **第 1 步：准备照片**
@@ -45,6 +58,7 @@ assets/photos/meizhou2020/
   "title": "围龙屋与海",
   "subtitle": "梅州 · 围龙屋　→　漳州 · 海",
   "cover": "assets/photos/meizhou2020/t/10.jpg",
+  "coverBig": "assets/photos/meizhou2020/10.jpg",
   "lead": ["第一段导语。", "第二段导语。"],
   "photos": [
     {
@@ -66,6 +80,7 @@ assets/photos/meizhou2020/
 | `id` | 唯一标识，决定网址 `trip.html?id=` |
 | `year` | 首页时间轴按它分组 |
 | `cover` | 首页卡片封面，用 `t/` 里的缩略图 |
+| `coverBig` | 行程页顶部大图，用**大图**（用缩略图会被拉开发虚） |
 | `lead` | 行程页导语，数组，每项一段 |
 | `orient` | 朝向：`portrait` 竖（限高居中）/ `landscape` 横 / `wide` 宽幅 |
 | `layout` | **版式**，见下表 ★ |
@@ -144,11 +159,14 @@ blog_repo/
 ├── index.html                首页（年份时间轴）
 ├── trip.html                 行程页（读 ?id= 参数）
 ├── data.json                 ★ 内容数据（只改这里）
+├── tools/
+│   └── sync_data.py          把 data.json 同步成 assets/data.js（本地预览兜底）
 ├── CNAME                     自定义域名
 ├── README.md                 本说明
 └── assets/
     ├── blog.css              日系胶片感样式（含 12 列版式系统）
     ├── blog.js               渲染脚本（首页 + 行程页共用）
+    ├── data.js               自动生成，勿手改（本地 file:// 预览用）
     └── photos/
         └── <行程id>/          每段行程一个文件夹
             ├── 01.jpg …      大图（长边 1800）
