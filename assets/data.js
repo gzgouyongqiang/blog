@@ -22,9 +22,9 @@ window.__BLOG_DATA__ = {
       "cover": "assets/photos/hailing2004/t/01.jpg",
       "coverBig": "assets/photos/hailing2004/cover.jpg",
       "lead": [
-        "这是我们全家第一次从老家出来。目的地，阳江的海陵岛。",
-        "海是第一次见。原来水可以大得看不见边，也可以响成那样。",
-        "相机上的日期一直没调对，这些照片在电脑里都显示成 2002 年。真正的那一天，是 2004 年 10 月 16 日。"
+        "二〇〇四年的秋天，第一次去看海。",
+        "海比想象的大，也比想象的响。",
+        "相机记错了年份，浪没有。"
       ],
       "photos": [
         {
@@ -32,80 +32,80 @@ window.__BLOG_DATA__ = {
           "thumb": "assets/photos/hailing2004/t/01.jpg",
           "orient": "landscape",
           "layout": "hero",
-          "caption": "我们仨的第一张合影",
-          "note": "2004 年 10 月 16 日。第一次从老家出来，第一次看见海——母亲戴一顶白帽子，父亲穿一件蓝 T 恤，孩子站在中间，刚戴上他的红帽子。"
+          "caption": "第一次看海",
+          "note": "风把帽子吹歪，也把那一天吹得很长。"
         },
         {
           "src": "assets/photos/hailing2004/02.jpg",
           "thumb": "assets/photos/hailing2004/t/02.jpg",
           "orient": "landscape",
           "layout": "aside",
-          "caption": "同一个山头上",
-          "note": "同一天、同一个位置，同行的几位也留了一张。父亲站在最左边。"
+          "caption": "山顶的风",
+          "note": "大家都站得离海很近。"
         },
         {
           "src": "assets/photos/hailing2004/03.jpg",
           "thumb": "assets/photos/hailing2004/t/03.jpg",
           "orient": "landscape",
           "layout": "center",
-          "caption": "大角湾的门口",
-          "note": "石墙上写着「国家AAAA级 大角湾」。孩子怀里抱着那只救生圈。"
+          "caption": "大角湾",
+          "note": "救生圈比人大，兴奋也是。"
         },
         {
           "src": "assets/photos/hailing2004/04.jpg",
           "thumb": "assets/photos/hailing2004/t/04.jpg",
           "orient": "landscape",
           "layout": "duo",
-          "caption": "雕塑前面",
-          "note": "海边立着一座浪花托着海豚的雕塑，后面就是沙滩和大角湾。"
+          "caption": "浪花与海豚",
+          "note": "石头做的海，也好看。"
         },
         {
           "src": "assets/photos/hailing2004/05.jpg",
           "thumb": "assets/photos/hailing2004/t/05.jpg",
           "orient": "landscape",
           "layout": "duo",
-          "caption": "第一次踩到海水",
-          "note": "相机把日期直接印在了画面上：2004.10.16。孩子站在浅水里，手里还拎着救生圈。"
+          "caption": "10.16",
+          "note": "照片自己记得那一天。"
         },
         {
           "src": "assets/photos/hailing2004/06.jpg",
           "thumb": "assets/photos/hailing2004/t/06.jpg",
           "orient": "landscape",
           "layout": "full",
-          "caption": "妈妈寸步不离",
-          "note": "一层层的浪推上来。孩子坐在圈里，母亲站在水里，一步都没走远。"
+          "caption": "浪来了",
+          "note": "浪一圈圈来，妈妈一直站在那里。"
         },
         {
           "src": "assets/photos/hailing2004/07.jpg",
           "thumb": "assets/photos/hailing2004/t/07.jpg",
           "orient": "landscape",
           "layout": "left",
-          "caption": "三个人都在浪里",
-          "note": "浪花把海水搅成白的。三个人的裤子都湿透了。"
+          "caption": "湿透的下午",
+          "note": "裤子湿了，笑声没停。"
         },
         {
           "src": "assets/photos/hailing2004/08.jpg",
           "thumb": "assets/photos/hailing2004/t/08.jpg",
           "orient": "landscape",
           "layout": "aside",
-          "caption": "蹲下来护着他",
-          "note": "两个人一起蹲进水里，扶着那只救生圈，等下一波浪过去。"
+          "caption": "等浪过去",
+          "note": "蹲下来，牵紧，等下一波浪。"
         },
         {
           "src": "assets/photos/hailing2004/09.jpg",
           "thumb": "assets/photos/hailing2004/t/09.jpg",
           "orient": "landscape",
           "layout": "right",
-          "caption": "一个浪打过来",
-          "note": "孩子被浪推得仰起脸，救生圈差点翻过来。"
+          "caption": "仰起的脸",
+          "note": "海先把勇敢给了小孩。"
         },
         {
           "src": "assets/photos/hailing2004/10.jpg",
           "thumb": "assets/photos/hailing2004/t/10.jpg",
           "orient": "landscape",
           "layout": "full",
-          "caption": "那天下午的海",
-          "note": "涨潮前的海滩。玩了一下午，还是舍不得走。"
+          "caption": "舍不得走",
+          "note": "海把下午拉得很长。"
         }
       ]
     },
@@ -120,9 +120,8 @@ window.__BLOG_DATA__ = {
       "cover": "assets/photos/xinjiang2019/t/10.jpg",
       "coverBig": "assets/photos/xinjiang2019/10.jpg",
       "lead": [
-        "六月中旬，从天池一路向西。",
-        "湖水是墨绿的，草原是嫩绿的，最后一天在赛里木湖，蓝一直铺到天边。三天，三种绿。",
-        "照片是相机拍的，没有滤镜——那里的颜色本来就这样。"
+        "六月，从天池一路向西。",
+        "三天，三种绿，最后被一片蓝收尾。"
       ],
       "photos": [
         {
@@ -130,40 +129,40 @@ window.__BLOG_DATA__ = {
           "thumb": "assets/photos/xinjiang2019/t/01.jpg",
           "orient": "portrait",
           "layout": "center",
-          "caption": "天池 · 湖畔",
-          "note": "经幡在风里飘了一整天。雪线还没退，山就那么站着。"
+          "caption": "天池",
+          "note": "经幡替风说话，雪山替时间站着。"
         },
         {
           "src": "assets/photos/xinjiang2019/02.jpg",
           "thumb": "assets/photos/xinjiang2019/t/02.jpg",
           "orient": "portrait",
           "layout": "duo",
-          "caption": "天池 · 东岸",
-          "note": "云杉长在岩壁上，水绿得不像话。"
+          "caption": "东岸",
+          "note": "绿得不像话，就不说话了。"
         },
         {
           "src": "assets/photos/xinjiang2019/03.jpg",
           "thumb": "assets/photos/xinjiang2019/t/03.jpg",
           "orient": "landscape",
           "layout": "duo",
-          "caption": "那拉提 · 牧场",
-          "note": "坡上那间小房子，烟囱没冒烟。羊群撒了一地。"
+          "caption": "牧场",
+          "note": "羊群散落，像谁打翻的云。"
         },
         {
           "src": "assets/photos/xinjiang2019/04.jpg",
           "thumb": "assets/photos/xinjiang2019/t/04.jpg",
           "orient": "portrait",
           "layout": "full",
-          "caption": "那拉提 · 一棵树",
-          "note": "草原上就它一棵，站得端端正正。树下一条小溪，水底的石头被冲得发白。"
+          "caption": "一棵树",
+          "note": "草原上独自端正的，都值得停下来。"
         },
         {
           "src": "assets/photos/xinjiang2019/05.jpg",
           "thumb": "assets/photos/xinjiang2019/t/05.jpg",
           "orient": "landscape",
           "layout": "full",
-          "caption": "去那拉提的路上",
-          "note": "路笔直地伸进绿色里。谁都没说话，车里只有风声。"
+          "caption": "在路上",
+          "note": "路伸进绿色里，风声替我们聊天。"
         },
         {
           "src": "assets/photos/xinjiang2019/06.jpg",
@@ -171,31 +170,31 @@ window.__BLOG_DATA__ = {
           "orient": "landscape",
           "layout": "center",
           "caption": "让路",
-          "note": "羊群横穿公路，车停下来。等了足有十分钟，没有一个人按喇叭。"
+          "note": "让羊先走，急什么呢。"
         },
         {
           "src": "assets/photos/xinjiang2019/07.jpg",
           "thumb": "assets/photos/xinjiang2019/t/07.jpg",
           "orient": "landscape",
           "layout": "duo",
-          "caption": "那拉提 · 云杉",
-          "note": "云杉一棵挨一棵，把山坡盖得严严实实。"
+          "caption": "云杉",
+          "note": "山把秘密藏得很严实。"
         },
         {
           "src": "assets/photos/xinjiang2019/08.jpg",
           "thumb": "assets/photos/xinjiang2019/t/08.jpg",
           "orient": "landscape",
           "layout": "duo",
-          "caption": "那拉提 · 花甸",
-          "note": "草地开满了蒲公英，风一吹就散。"
+          "caption": "花甸",
+          "note": "风一吹，蒲公英就去旅行。"
         },
         {
           "src": "assets/photos/xinjiang2019/09.jpg",
           "thumb": "assets/photos/xinjiang2019/t/09.jpg",
           "orient": "landscape",
           "layout": "left",
-          "caption": "蒲公英",
-          "note": "凑近才看见，每一朵都举着一个小小的太阳。"
+          "caption": "小太阳",
+          "note": "每一朵，都举着自己的光。"
         },
         {
           "src": "assets/photos/xinjiang2019/10.jpg",
@@ -203,7 +202,7 @@ window.__BLOG_DATA__ = {
           "orient": "landscape",
           "layout": "full",
           "caption": "赛里木湖",
-          "note": "水清得能数清湖底的石头。远处的雪山和云连在一起，分不出边界。"
+          "note": "蓝到天边，就不分你我了。"
         }
       ]
     },
@@ -218,9 +217,8 @@ window.__BLOG_DATA__ = {
       "cover": "assets/photos/meizhou2020/t/10.jpg",
       "coverBig": "assets/photos/meizhou2020/10.jpg",
       "lead": [
-        "春节出门，往南走。先看老屋，再看海。",
-        "围龙屋的门楣上挂着匾，门两边各有一条长凳，像是专为歇脚的人备下的。海边的风大，礁石是红的，岸边停着一排帆船。",
-        "照片都是随手拍的，没有摆。日子过成这样，走到哪儿都像在旅行。"
+        "春节，先看老屋，再看海。",
+        "老屋慢慢旧，海慢慢蓝，日子慢慢过。"
       ],
       "photos": [
         {
@@ -228,8 +226,8 @@ window.__BLOG_DATA__ = {
           "thumb": "assets/photos/meizhou2020/t/01.jpg",
           "orient": "portrait",
           "layout": "aside",
-          "caption": "老屋门口",
-          "note": "匾上写着「慶成樓」。门两边各有一条长凳，像是专为歇脚的人备下的。"
+          "caption": "庆成楼",
+          "note": "长凳还在等歇脚的人。"
         },
         {
           "src": "assets/photos/meizhou2020/02.jpg",
@@ -237,7 +235,7 @@ window.__BLOG_DATA__ = {
           "orient": "portrait",
           "layout": "narrow",
           "caption": "看水",
-          "note": "她在水边站了很久，看对岸的竹林。风把水面吹出一层层的纹。"
+          "note": "她看水，水看天。"
         },
         {
           "src": "assets/photos/meizhou2020/03.jpg",
@@ -245,7 +243,7 @@ window.__BLOG_DATA__ = {
           "orient": "landscape",
           "layout": "duo",
           "caption": "踩沙",
-          "note": "沙滩上一串脚印，走着走着就到水边了。"
+          "note": "脚印走到哪儿，海就跟到哪儿。"
         },
         {
           "src": "assets/photos/meizhou2020/04.jpg",
@@ -253,15 +251,15 @@ window.__BLOG_DATA__ = {
           "orient": "landscape",
           "layout": "duo",
           "caption": "回看",
-          "note": "拍完一张，两个人都低头看刚才拍得怎么样。"
+          "note": "拍下来的，都是好时光。"
         },
         {
           "src": "assets/photos/meizhou2020/05.jpg",
           "thumb": "assets/photos/meizhou2020/t/05.jpg",
           "orient": "wide",
           "layout": "full",
-          "caption": "墙上的字",
-          "note": "蓝墙上写着「人一定要有梦想，即使是咸鱼，也要做最咸的那条」。她抬腿配合了一下。"
+          "caption": "咸鱼的梦想",
+          "note": "要做，就做最咸的那条。"
         },
         {
           "src": "assets/photos/meizhou2020/06.jpg",
@@ -269,15 +267,15 @@ window.__BLOG_DATA__ = {
           "orient": "landscape",
           "layout": "center",
           "caption": "码头",
-          "note": "在码头边坐下，等船靠岸。"
+          "note": "等船的人，也在等风。"
         },
         {
           "src": "assets/photos/meizhou2020/07.jpg",
           "thumb": "assets/photos/meizhou2020/t/07.jpg",
           "orient": "landscape",
           "layout": "full",
-          "caption": "水雾",
-          "note": "水雾从池子里升起来，四点钟的光正好。"
+          "caption": "四点钟",
+          "note": "水雾升起来，光刚刚好。"
         },
         {
           "src": "assets/photos/meizhou2020/08.jpg",
@@ -285,7 +283,7 @@ window.__BLOG_DATA__ = {
           "orient": "portrait",
           "layout": "duo",
           "caption": "到此一游",
-          "note": "栈道上她举起手，说要拍一张标准的「到此一游」。"
+          "note": "举手的角度，刚刚好。"
         },
         {
           "src": "assets/photos/meizhou2020/09.jpg",
@@ -293,7 +291,7 @@ window.__BLOG_DATA__ = {
           "orient": "portrait",
           "layout": "duo",
           "caption": "书院",
-          "note": "「東山書院」门前挂着红灯笼，匾额上写着「書院状元红」。两个人一前一后走过去。"
+          "note": "红灯笼照着旧时光。"
         },
         {
           "src": "assets/photos/meizhou2020/10.jpg",
@@ -301,7 +299,7 @@ window.__BLOG_DATA__ = {
           "orient": "landscape",
           "layout": "right",
           "caption": "盛德若愚",
-          "note": "石牌坊上刻着「盛德若愚」，他们从底下走过去。"
+          "note": "从牌坊下走过，带走一点安静。"
         },
         {
           "src": "assets/photos/meizhou2020/11.jpg",
@@ -309,15 +307,15 @@ window.__BLOG_DATA__ = {
           "orient": "landscape",
           "layout": "left",
           "caption": "蹲下来",
-          "note": "蹲下来才发现，沙子是凉的。手里捏着刚捡的小东西。"
+          "note": "小东西，也有小欢喜。"
         },
         {
           "src": "assets/photos/meizhou2020/12.jpg",
           "thumb": "assets/photos/meizhou2020/t/12.jpg",
           "orient": "landscape",
           "layout": "full",
-          "caption": "回程",
-          "note": "码头上风大，旗子被吹得笔直。该回家了。"
+          "caption": "回家",
+          "note": "旗子吹直了，回家的路也是。"
         }
       ]
     }
