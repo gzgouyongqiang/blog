@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>行程 · 山高路远，家在身边</title>
-<meta name="description" content="一家人的旅行记录">
+<meta name="description" content="一家人的生活记录">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='88'>⛰</text></svg>">
 <link rel="stylesheet" href="assets/blog.css">
 </head>
@@ -15,7 +15,6 @@
     <a href="index.html" class="nav-logo">山高路远，家在身边</a>
     <div class="nav-links">
       <a href="index.html#albums">相册</a>
-      <a href="index.html#notes">随想</a>
     </div>
   </div>
 </nav>
@@ -23,17 +22,17 @@
 <div id="tripRoot">
 
   <header class="trip-hero">
-    <div class="trip-hero-cover">
+    <div class="trip-hero-in">
       <img id="tCover" alt="" src="">
-    </div>
-    <div class="trip-hero-inner">
-      <div class="trip-hero-date" id="tDate"></div>
-      <h1 class="trip-hero-title" id="tTitle"></h1>
-      <div class="trip-hero-place" id="tPlace"></div>
-      <div class="trip-hero-divider"></div>
-      <div class="trip-hero-lead" id="tLead"></div>
+      <div class="trip-hero-cap">
+        <div class="trip-hero-date" id="tDate"></div>
+        <h1 class="trip-hero-title" id="tTitle"></h1>
+        <div class="trip-hero-place" id="tPlace"></div>
+      </div>
     </div>
   </header>
+
+  <div class="trip-lead" id="tLead"></div>
 
   <div class="flow" id="flow"></div>
 
@@ -46,7 +45,6 @@
 </footer>
 
 <div class="lightbox" id="lightbox">
-  <span class="lightbox-close">✕</span>
   <img id="lightboxImg" alt="">
   <div class="lightbox-cap" id="lightboxCap"></div>
 </div>

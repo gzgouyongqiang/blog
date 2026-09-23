@@ -1,8 +1,14 @@
-/* ============================================
+/* ============================================================
    山高路远，家在身边 — 渲染脚本
    内容全部来自 data.json，改 JSON 即可更新
    同一份脚本同时服务：首页(index.html) 与 行程页(trip.html)
-   ============================================ */
+
+   照片版式（photos[].layout）：
+     full    全宽          center  居中（8/12）
+     narrow  窄居中（6/12） left    偏左（8/12）
+     right   偏右（8/12）   aside   图文并排
+     duo     与下一张并排（两张都写 duo）
+   ============================================================ */
 
 (function () {
   'use strict';
@@ -25,9 +31,9 @@
   }
 
   /* ---------- 灯箱 ---------- */
-  var lb      = document.getElementById('lightbox');
-  var lbImg   = document.getElementById('lightboxImg');
-  var lbCap   = document.getElementById('lightboxCap');
+  var lb    = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lightboxImg');
+  var lbCap = document.getElementById('lightboxCap');
 
   function openLightbox(src, cap) {
     if (!lb) return;
@@ -49,7 +55,7 @@
   }
 
   /* ============================================
-     首页
+     首页：年份时间轴
      ============================================ */
   function renderTimeline(trips) {
     if (!trips || !trips.length) {
@@ -57,7 +63,6 @@
       return;
     }
 
-    // 按年份分组
     var byYear = {};
     trips.forEach(function (t) {
       var y = String(t.year || '未标注');
@@ -130,24 +135,77 @@
   /* ============================================
      行程详情页
      ============================================ */
+
+  /* 单张照片的 HTML */
+  function figureHTML(p, i) {
+    var cls = 'flow-item';
+    if (p.orient === 'portrait') cls += ' is-portrait';
+
+    return '<figure class="' + cls + '">' +
+      '<div class="flow-pic" data-idx="' + i + '">' +
+        '<img src="' + esc(p.src) + '" alt="' + esc(p.caption || '') + '" loading="lazy">' +
+      '</div>' +
+      '<figcaption class="flow-cap">' +
+        '<div class="flow-cap-head">' +
+          '<span class="flow-cap-no">' + String(i + 1).padStart(2, '0') + '</span>' +
+          '<span class="flow-cap-main">' + esc(p.caption || '') + '</span>' +
+        '</div>' +
+        (p.note ? '<div class="flow-cap-note">' + esc(p.note) + '</div>' : '') +
+      '</figcaption>' +
+    '</figure>';
+  }
+
+  var LAYOUT_CLASS = {
+    full:   'f-full',
+    center: 'f-center',
+    narrow: 'f-narrow',
+    left:   'f-left',
+    right:  'f-right'
+  };
+
+  /* 照片流：按 layout 编排 */
+  function renderFlow(photos) {
+    var h = '', i = 0;
+
+    while (i < photos.length) {
+      var p    = photos[i];
+      var lay  = p.layout || 'full';
+      var next = photos[i + 1];
+
+      /* 两张并排 */
+      if (lay === 'duo' && next && (next.layout || 'full') === 'duo') {
+        h += '<div class="f-duo">' + figureHTML(p, i) + figureHTML(next, i + 1) + '</div>';
+        i += 2;
+        continue;
+      }
+      /* 图文并排 */
+      if (lay === 'aside') {
+        h += '<div class="f-aside">' + figureHTML(p, i) + '</div>';
+        i += 1;
+        continue;
+      }
+      /* 单张 */
+      h += '<div class="' + (LAYOUT_CLASS[lay] || 'f-full') + '">' + figureHTML(p, i) + '</div>';
+      i += 1;
+    }
+    return h;
+  }
+
   function renderTrip(data, id) {
     var trips = data.trips || [];
     var idx = -1;
     trips.forEach(function (t, i) { if (t.id === id) idx = i; });
 
     if (idx < 0) {
-      document.getElementById('tripRoot').innerHTML =
-        empty('！', '没有找到这段行程');
+      document.getElementById('flow').innerHTML = empty('！', '没有找到这段行程');
       return;
     }
 
     var t = trips[idx];
-
     document.title = (t.title || '行程') + ' · 山高路远，家在身边';
 
     var cover = document.getElementById('tCover');
-    cover.src = t.cover || '';
-    cover.alt = t.title || '';
+    if (cover) { cover.src = t.cover || ''; cover.alt = t.title || ''; }
 
     document.getElementById('tDate').textContent  = t.date || '';
     document.getElementById('tTitle').textContent = t.title || '';
@@ -163,27 +221,7 @@
     if (!photos.length) {
       flow.innerHTML = empty('— — —', '这段行程还没有照片');
     } else {
-      var h = '';
-      photos.forEach(function (p, i) {
-        var cls = 'flow-item';
-        if (p.orient === 'portrait') cls += ' is-portrait';
-        else if (p.orient === 'square') cls += ' is-square';
-
-        h +=
-          '<figure class="' + cls + '">' +
-            '<div class="flow-pic" data-idx="' + i + '">' +
-              '<img src="' + esc(p.src) + '" alt="' + esc(p.caption || '') + '" loading="lazy">' +
-            '</div>' +
-            '<figcaption class="flow-cap">' +
-              '<div class="flow-cap-head">' +
-                '<span class="flow-cap-no">' + String(i + 1).padStart(2, '0') + '</span>' +
-                '<span class="flow-cap-main">' + esc(p.caption || '') + '</span>' +
-              '</div>' +
-              (p.note ? '<div class="flow-cap-note">' + esc(p.note) + '</div>' : '') +
-            '</figcaption>' +
-          '</figure>';
-      });
-      flow.innerHTML = h;
+      flow.innerHTML = renderFlow(photos);
 
       flow.querySelectorAll('.flow-pic').forEach(function (box) {
         box.addEventListener('click', function () {
@@ -193,10 +231,9 @@
       });
     }
 
-    /* --- 上一段 / 下一段 --- */
-    var prev = idx + 1 < trips.length ? trips[idx + 1] : null;  // 数组按新→旧
+    /* --- 上一段 / 下一段（数组按新→旧） --- */
+    var prev = idx + 1 < trips.length ? trips[idx + 1] : null;
     var next = idx - 1 >= 0 ? trips[idx - 1] : null;
-    var end = document.getElementById('tripEnd');
     var parts = [];
     parts.push(prev
       ? '<a href="trip.html?id=' + encodeURIComponent(prev.id) + '">← ' + esc(prev.title) + '</a>'
@@ -205,9 +242,8 @@
     parts.push(next
       ? '<a href="trip.html?id=' + encodeURIComponent(next.id) + '">' + esc(next.title) + ' →</a>'
       : '<span class="dim">已是最后一段 →</span>');
-    end.innerHTML = parts.join('');
+    document.getElementById('tripEnd').innerHTML = parts.join('');
 
-    /* 封面图淡入 */
     var hero = document.querySelector('.trip-hero');
     if (hero) hero.classList.add('fade-in');
   }

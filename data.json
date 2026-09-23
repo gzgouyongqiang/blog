@@ -1,5 +1,5 @@
 {
-  "_说明": "全站内容数据源。新增一次旅行：把照片放进 assets/photos/<行程id>/，然后在 trips 数组里加一条即可，不需要改 HTML。",
+  "_说明": "全站内容数据源。新增一次出行：把照片放进 assets/photos/<行程id>/（含 t/ 缩略图目录），然后在 trips 数组里加一条即可，不需要改 HTML。",
 
   "site": {
     "title": "山高路远，家在身边",
@@ -11,6 +11,119 @@
   },
 
   "trips": [
+    {
+      "id": "meizhou2020",
+      "year": "2020",
+      "date": "2020.01.22 — 01.29",
+      "dateShort": "01.22 — 01.29",
+      "place": "梅州 · 漳州",
+      "title": "围龙屋与海",
+      "subtitle": "梅州 · 围龙屋　→　漳州 · 海",
+      "cover": "assets/photos/meizhou2020/t/10.jpg",
+      "lead": [
+        "春节出门，往南走。先看老屋，再看海。",
+        "围龙屋的门楣上挂着匾，门两边各有一条长凳，像是专为歇脚的人备下的。海边的风大，礁石是红的，岸边停着一排帆船。",
+        "照片都是随手拍的，没有摆。日子过成这样，走到哪儿都像在旅行。"
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/meizhou2020/01.jpg",
+          "thumb": "assets/photos/meizhou2020/t/01.jpg",
+          "orient": "portrait",
+          "layout": "aside",
+          "caption": "老屋门口",
+          "note": "匾上写着「慶成樓」。门两边各有一条长凳，像是专为歇脚的人备下的。"
+        },
+        {
+          "src": "assets/photos/meizhou2020/02.jpg",
+          "thumb": "assets/photos/meizhou2020/t/02.jpg",
+          "orient": "portrait",
+          "layout": "narrow",
+          "caption": "看水",
+          "note": "她在水边站了很久，看对岸的竹林。风把水面吹出一层层的纹。"
+        },
+        {
+          "src": "assets/photos/meizhou2020/03.jpg",
+          "thumb": "assets/photos/meizhou2020/t/03.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "踩沙",
+          "note": "沙滩上一串脚印，走着走着就到水边了。"
+        },
+        {
+          "src": "assets/photos/meizhou2020/04.jpg",
+          "thumb": "assets/photos/meizhou2020/t/04.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "回看",
+          "note": "拍完一张，两个人都低头看刚才拍得怎么样。"
+        },
+        {
+          "src": "assets/photos/meizhou2020/05.jpg",
+          "thumb": "assets/photos/meizhou2020/t/05.jpg",
+          "orient": "wide",
+          "layout": "full",
+          "caption": "墙上的字",
+          "note": "蓝墙上写着「人一定要有梦想，即使是咸鱼，也要做最咸的那条」。她抬腿配合了一下。"
+        },
+        {
+          "src": "assets/photos/meizhou2020/06.jpg",
+          "thumb": "assets/photos/meizhou2020/t/06.jpg",
+          "orient": "landscape",
+          "layout": "center",
+          "caption": "码头",
+          "note": "在码头边坐下，等船靠岸。"
+        },
+        {
+          "src": "assets/photos/meizhou2020/07.jpg",
+          "thumb": "assets/photos/meizhou2020/t/07.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "水雾",
+          "note": "水雾从池子里升起来，四点钟的光正好。"
+        },
+        {
+          "src": "assets/photos/meizhou2020/08.jpg",
+          "thumb": "assets/photos/meizhou2020/t/08.jpg",
+          "orient": "portrait",
+          "layout": "duo",
+          "caption": "到此一游",
+          "note": "栈道上她举起手，说要拍一张标准的「到此一游」。"
+        },
+        {
+          "src": "assets/photos/meizhou2020/09.jpg",
+          "thumb": "assets/photos/meizhou2020/t/09.jpg",
+          "orient": "portrait",
+          "layout": "duo",
+          "caption": "书院",
+          "note": "「東山書院」门前挂着红灯笼，匾额上写着「書院状元红」。两个人一前一后走过去。"
+        },
+        {
+          "src": "assets/photos/meizhou2020/10.jpg",
+          "thumb": "assets/photos/meizhou2020/t/10.jpg",
+          "orient": "landscape",
+          "layout": "right",
+          "caption": "盛德若愚",
+          "note": "石牌坊上刻着「盛德若愚」，他们从底下走过去。"
+        },
+        {
+          "src": "assets/photos/meizhou2020/11.jpg",
+          "thumb": "assets/photos/meizhou2020/t/11.jpg",
+          "orient": "landscape",
+          "layout": "left",
+          "caption": "蹲下来",
+          "note": "蹲下来才发现，沙子是凉的。手里捏着刚捡的小东西。"
+        },
+        {
+          "src": "assets/photos/meizhou2020/12.jpg",
+          "thumb": "assets/photos/meizhou2020/t/12.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "回程",
+          "note": "码头上风大，旗子被吹得笔直。该回家了。"
+        }
+      ]
+    },
     {
       "id": "xinjiang2019",
       "year": "2019",
@@ -30,6 +143,7 @@
           "src": "assets/photos/xinjiang2019/01.jpg",
           "thumb": "assets/photos/xinjiang2019/t/01.jpg",
           "orient": "portrait",
+          "layout": "center",
           "caption": "天池 · 湖畔",
           "note": "经幡在风里飘了一整天。雪线还没退，山就那么站着。"
         },
@@ -37,6 +151,7 @@
           "src": "assets/photos/xinjiang2019/02.jpg",
           "thumb": "assets/photos/xinjiang2019/t/02.jpg",
           "orient": "portrait",
+          "layout": "duo",
           "caption": "天池 · 东岸",
           "note": "云杉长在岩壁上，水绿得不像话。"
         },
@@ -44,6 +159,7 @@
           "src": "assets/photos/xinjiang2019/03.jpg",
           "thumb": "assets/photos/xinjiang2019/t/03.jpg",
           "orient": "landscape",
+          "layout": "duo",
           "caption": "那拉提 · 牧场",
           "note": "坡上那间小房子，烟囱没冒烟。羊群撒了一地。"
         },
@@ -51,6 +167,7 @@
           "src": "assets/photos/xinjiang2019/04.jpg",
           "thumb": "assets/photos/xinjiang2019/t/04.jpg",
           "orient": "portrait",
+          "layout": "full",
           "caption": "那拉提 · 一棵树",
           "note": "草原上就它一棵，站得端端正正。树下一条小溪，水底的石头被冲得发白。"
         },
@@ -58,6 +175,7 @@
           "src": "assets/photos/xinjiang2019/05.jpg",
           "thumb": "assets/photos/xinjiang2019/t/05.jpg",
           "orient": "landscape",
+          "layout": "full",
           "caption": "去那拉提的路上",
           "note": "路笔直地伸进绿色里。谁都没说话，车里只有风声。"
         },
@@ -65,6 +183,7 @@
           "src": "assets/photos/xinjiang2019/06.jpg",
           "thumb": "assets/photos/xinjiang2019/t/06.jpg",
           "orient": "landscape",
+          "layout": "center",
           "caption": "让路",
           "note": "羊群横穿公路，车停下来。等了足有十分钟，没有一个人按喇叭。"
         },
@@ -72,6 +191,7 @@
           "src": "assets/photos/xinjiang2019/07.jpg",
           "thumb": "assets/photos/xinjiang2019/t/07.jpg",
           "orient": "landscape",
+          "layout": "duo",
           "caption": "那拉提 · 云杉",
           "note": "云杉一棵挨一棵，把山坡盖得严严实实。"
         },
@@ -79,6 +199,7 @@
           "src": "assets/photos/xinjiang2019/08.jpg",
           "thumb": "assets/photos/xinjiang2019/t/08.jpg",
           "orient": "landscape",
+          "layout": "duo",
           "caption": "那拉提 · 花甸",
           "note": "草地开满了蒲公英，风一吹就散。"
         },
@@ -86,6 +207,7 @@
           "src": "assets/photos/xinjiang2019/09.jpg",
           "thumb": "assets/photos/xinjiang2019/t/09.jpg",
           "orient": "landscape",
+          "layout": "left",
           "caption": "蒲公英",
           "note": "凑近才看见，每一朵都举着一个小小的太阳。"
         },
@@ -93,6 +215,7 @@
           "src": "assets/photos/xinjiang2019/10.jpg",
           "thumb": "assets/photos/xinjiang2019/t/10.jpg",
           "orient": "landscape",
+          "layout": "full",
           "caption": "赛里木湖",
           "note": "水清得能数清湖底的石头。远处的雪山和云连在一起，分不出边界。"
         }
