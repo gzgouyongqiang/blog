@@ -302,6 +302,394 @@
       ]
     },
     {
+      "id": "window2006",
+      "year": "2006",
+      "date": "2006.01",
+      "dateShort": "01",
+      "place": "深圳",
+      "title": "去看世界",
+      "subtitle": "深圳 · 世界之窗",
+      "cover": "assets/photos/window2006/t/01.jpg",
+      "coverBig": "assets/photos/window2006/cover.jpg",
+      "lead": [
+        "一月，去深圳。",
+        "一天走遍世界——这是大人给小孩的魔术。"
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/window2006/01.jpg",
+          "thumb": "assets/photos/window2006/t/01.jpg",
+          "orient": "landscape",
+          "layout": "hero",
+          "caption": "夜幕",
+          "note": "灯一亮，世界就到了眼前。"
+        },
+        {
+          "src": "assets/photos/window2006/02.jpg",
+          "thumb": "assets/photos/window2006/t/02.jpg",
+          "orient": "portrait",
+          "layout": "aside",
+          "caption": "巴黎",
+          "note": "真铁塔太远，先看看这个。"
+        },
+        {
+          "src": "assets/photos/window2006/03.jpg",
+          "thumb": "assets/photos/window2006/t/03.jpg",
+          "orient": "landscape",
+          "layout": "center",
+          "caption": "过桥",
+          "note": "风很大，妈妈的手很暖。"
+        },
+        {
+          "src": "assets/photos/window2006/04.jpg",
+          "thumb": "assets/photos/window2006/t/04.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "出发",
+          "note": "走，看世界去。"
+        },
+        {
+          "src": "assets/photos/window2006/05.jpg",
+          "thumb": "assets/photos/window2006/t/05.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "石柱",
+          "note": "柱子比家里的粗多了。"
+        },
+        {
+          "src": "assets/photos/window2006/06.jpg",
+          "thumb": "assets/photos/window2006/t/06.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "爸爸妈妈",
+          "note": "他们也有过无忧无虑的年纪。"
+        },
+        {
+          "src": "assets/photos/window2006/07.jpg",
+          "thumb": "assets/photos/window2006/t/07.jpg",
+          "orient": "landscape",
+          "layout": "left",
+          "caption": "恐龙园",
+          "note": "比个V，恐龙别动。"
+        },
+        {
+          "src": "assets/photos/window2006/08.jpg",
+          "thumb": "assets/photos/window2006/t/08.jpg",
+          "orient": "portrait",
+          "layout": "aside",
+          "caption": "浮雕",
+          "note": "小孩和石头，都很倔。"
+        },
+        {
+          "src": "assets/photos/window2006/09.jpg",
+          "thumb": "assets/photos/window2006/t/09.jpg",
+          "orient": "landscape",
+          "layout": "right",
+          "caption": "金字塔",
+          "note": "爸爸站得比石像还稳。"
+        },
+        {
+          "src": "assets/photos/window2006/10.jpg",
+          "thumb": "assets/photos/window2006/t/10.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "花坛",
+          "note": "花不懂语言，到处都开。"
+        }
+      ]
+    },
+    {
+      "id": "haiquan2006",
+      "year": "2006",
+      "date": "2006.03",
+      "dateShort": "03",
+      "place": "珠海",
+      "title": "海泉湾的风",
+      "subtitle": "珠海 · 海泉湾",
+      "cover": "assets/photos/haiquan2006/t/01.jpg",
+      "coverBig": "assets/photos/haiquan2006/cover.jpg",
+      "lead": [
+        "春天，全班去春游，妈妈也随队。",
+        "过山车很远就听得见，心跳也是。"
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/haiquan2006/01.jpg",
+          "thumb": "assets/photos/haiquan2006/t/01.jpg",
+          "orient": "landscape",
+          "layout": "hero",
+          "caption": "春游",
+          "note": "海风是甜的，书包是轻的。"
+        },
+        {
+          "src": "assets/photos/haiquan2006/02.jpg",
+          "thumb": "assets/photos/haiquan2006/t/02.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "躺平",
+          "note": "玩累了，天当被子。"
+        },
+        {
+          "src": "assets/photos/haiquan2006/03.jpg",
+          "thumb": "assets/photos/haiquan2006/t/03.jpg",
+          "orient": "landscape",
+          "layout": "center",
+          "caption": "妈妈",
+          "note": "走到哪儿，都有她的身影。"
+        },
+        {
+          "src": "assets/photos/haiquan2006/04.jpg",
+          "thumb": "assets/photos/haiquan2006/t/04.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "小火车",
+          "note": "呜——出发喽。"
+        },
+        {
+          "src": "assets/photos/haiquan2006/05.jpg",
+          "thumb": "assets/photos/haiquan2006/t/05.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "海豚",
+          "note": "石头海豚，驮着两个小孩。"
+        },
+        {
+          "src": "assets/photos/haiquan2006/06.jpg",
+          "thumb": "assets/photos/haiquan2006/t/06.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "碰碰船",
+          "note": "水里转圈，笑声打转。"
+        },
+        {
+          "src": "assets/photos/haiquan2006/07.jpg",
+          "thumb": "assets/photos/haiquan2006/t/07.jpg",
+          "orient": "portrait",
+          "layout": "left",
+          "caption": "吊环",
+          "note": "抓住的东西，不轻易放手。"
+        },
+        {
+          "src": "assets/photos/haiquan2006/08.jpg",
+          "thumb": "assets/photos/haiquan2006/t/08.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "笑",
+          "note": "对着岩石，练一课大笑。"
+        },
+        {
+          "src": "assets/photos/haiquan2006/09.jpg",
+          "thumb": "assets/photos/haiquan2006/t/09.jpg",
+          "orient": "portrait",
+          "layout": "right",
+          "caption": "大笑",
+          "note": "快乐要两个人分才够。"
+        },
+        {
+          "src": "assets/photos/haiquan2006/10.jpg",
+          "thumb": "assets/photos/haiquan2006/t/10.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "冰淇淋",
+          "note": "先甜为敬。"
+        }
+      ]
+    },
+    {
+      "id": "school2006",
+      "year": "2006",
+      "date": "2006.06 — 11",
+      "dateShort": "06 — 11",
+      "place": "珠海",
+      "title": "学校的一年",
+      "subtitle": "六一 · 运动会 · 谜社",
+      "cover": "assets/photos/school2006/t/01.jpg",
+      "coverBig": "assets/photos/school2006/cover.jpg",
+      "lead": [
+        "这一年，他在台上，也在跑道上。",
+        "台侧有位音乐老师，一直看着他。"
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/school2006/01.jpg",
+          "thumb": "assets/photos/school2006/t/01.jpg",
+          "orient": "landscape",
+          "layout": "hero",
+          "caption": "起跑",
+          "note": "跑道尽头，是更快的自己。"
+        },
+        {
+          "src": "assets/photos/school2006/02.jpg",
+          "thumb": "assets/photos/school2006/t/02.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "朗诵",
+          "note": "话筒很近，胆子更大。"
+        },
+        {
+          "src": "assets/photos/school2006/03.jpg",
+          "thumb": "assets/photos/school2006/t/03.jpg",
+          "orient": "landscape",
+          "layout": "center",
+          "caption": "同桌",
+          "note": "教室里的光，刚好落在脸上。"
+        },
+        {
+          "src": "assets/photos/school2006/04.jpg",
+          "thumb": "assets/photos/school2006/t/04.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "双杠",
+          "note": "撑起来，天就高了。"
+        },
+        {
+          "src": "assets/photos/school2006/05.jpg",
+          "thumb": "assets/photos/school2006/t/05.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "翻越",
+          "note": "小孩的力气，藏不住。"
+        },
+        {
+          "src": "assets/photos/school2006/06.jpg",
+          "thumb": "assets/photos/school2006/t/06.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "广播操",
+          "note": "几百个人，做同一个动作。"
+        },
+        {
+          "src": "assets/photos/school2006/07.jpg",
+          "thumb": "assets/photos/school2006/t/07.jpg",
+          "orient": "landscape",
+          "layout": "left",
+          "caption": "谜社",
+          "note": "台侧那件橙衣，是妈妈。"
+        },
+        {
+          "src": "assets/photos/school2006/08.jpg",
+          "thumb": "assets/photos/school2006/t/08.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "落沙",
+          "note": "摔进软软的胜利里。"
+        },
+        {
+          "src": "assets/photos/school2006/09.jpg",
+          "thumb": "assets/photos/school2006/t/09.jpg",
+          "orient": "landscape",
+          "layout": "right",
+          "caption": "兄弟",
+          "note": "红衣服，分一半给朋友。"
+        },
+        {
+          "src": "assets/photos/school2006/10.jpg",
+          "thumb": "assets/photos/school2006/t/10.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "合唱",
+          "note": "歌是把日子串起来的线。"
+        }
+      ]
+    },
+    {
+      "id": "guangzhou2006",
+      "year": "2006",
+      "date": "2006.10",
+      "dateShort": "10",
+      "place": "广州",
+      "title": "广州的秋天",
+      "subtitle": "白云山 · 珠江夜游 · 香雪公园",
+      "cover": "assets/photos/guangzhou2006/t/01.jpg",
+      "coverBig": "assets/photos/guangzhou2006/cover.jpg",
+      "lead": [
+        "十月的广州，白天爬山，晚上看灯。",
+        "后来又去了香雪公园——梅花未开，秋天先到。"
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/guangzhou2006/01.jpg",
+          "thumb": "assets/photos/guangzhou2006/t/01.jpg",
+          "orient": "landscape",
+          "layout": "hero",
+          "caption": "夜游",
+          "note": "小孩仰起头，珠江亮成银河。"
+        },
+        {
+          "src": "assets/photos/guangzhou2006/02.jpg",
+          "thumb": "assets/photos/guangzhou2006/t/02.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "泡泡",
+          "note": "一口气，吹出一个秋天。"
+        },
+        {
+          "src": "assets/photos/guangzhou2006/03.jpg",
+          "thumb": "assets/photos/guangzhou2006/t/03.jpg",
+          "orient": "landscape",
+          "layout": "center",
+          "caption": "山顶",
+          "note": "白云山不高，够看整座城。"
+        },
+        {
+          "src": "assets/photos/guangzhou2006/04.jpg",
+          "thumb": "assets/photos/guangzhou2006/t/04.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "哥俩",
+          "note": "比一个V，秋天才算开场。"
+        },
+        {
+          "src": "assets/photos/guangzhou2006/05.jpg",
+          "thumb": "assets/photos/guangzhou2006/t/05.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "合影",
+          "note": "三个人，三种笑容。"
+        },
+        {
+          "src": "assets/photos/guangzhou2006/06.jpg",
+          "thumb": "assets/photos/guangzhou2006/t/06.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "桥灯",
+          "note": "灯把桥点着了，水替它传出去。"
+        },
+        {
+          "src": "assets/photos/guangzhou2006/07.jpg",
+          "thumb": "assets/photos/guangzhou2006/t/07.jpg",
+          "orient": "landscape",
+          "layout": "left",
+          "caption": "望湖",
+          "note": "湖对岸有什么？有整个下午。"
+        },
+        {
+          "src": "assets/photos/guangzhou2006/08.jpg",
+          "thumb": "assets/photos/guangzhou2006/t/08.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "递花",
+          "note": "把花递过来，秋天就收到了。"
+        },
+        {
+          "src": "assets/photos/guangzhou2006/09.jpg",
+          "thumb": "assets/photos/guangzhou2006/t/09.jpg",
+          "orient": "landscape",
+          "layout": "right",
+          "caption": "石径",
+          "note": "蹲下来，和草说会儿话。"
+        },
+        {
+          "src": "assets/photos/guangzhou2006/10.jpg",
+          "thumb": "assets/photos/guangzhou2006/t/10.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "梅枝",
+          "note": "梅花未开，香雪先到了。"
+        }
+      ]
+    },
+    {
       "id": "xinjiang2019",
       "year": "2019",
       "date": "2019.06.13 — 06.15",
