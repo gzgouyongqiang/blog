@@ -692,6 +692,394 @@ window.__BLOG_DATA__ = {
       ]
     },
     {
+      "id": "oceanpark2007",
+      "year": "2007",
+      "date": "2007.02",
+      "dateShort": "02",
+      "place": "珠海",
+      "title": "海洋馆的一课",
+      "subtitle": "珠海海洋公园 · 水族馆",
+      "cover": "assets/photos/oceanpark2007/t/01.jpg",
+      "coverBig": "assets/photos/oceanpark2007/cover.jpg",
+      "lead": [
+        "海被装进玻璃缸，妈妈负责讲解。",
+        "他看得认真——原来海底，是安静的热闹。"
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/oceanpark2007/01.jpg",
+          "thumb": "assets/photos/oceanpark2007/t/01.jpg",
+          "orient": "landscape",
+          "layout": "hero",
+          "caption": "珊瑚洞",
+          "note": "珊瑚后面，藏着一片海"
+        },
+        {
+          "src": "assets/photos/oceanpark2007/02.jpg",
+          "thumb": "assets/photos/oceanpark2007/t/02.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "讲解",
+          "note": "妈妈的声音，比讲解牌温柔"
+        },
+        {
+          "src": "assets/photos/oceanpark2007/03.jpg",
+          "thumb": "assets/photos/oceanpark2007/t/03.jpg",
+          "orient": "landscape",
+          "layout": "center",
+          "caption": "贝壳",
+          "note": "大海的心事，锁在壳里"
+        },
+        {
+          "src": "assets/photos/oceanpark2007/04.jpg",
+          "thumb": "assets/photos/oceanpark2007/t/04.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "海龟",
+          "note": "它游得慢，因为驮着时间"
+        },
+        {
+          "src": "assets/photos/oceanpark2007/05.jpg",
+          "thumb": "assets/photos/oceanpark2007/t/05.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "老居民",
+          "note": "一亿年，学会不着急"
+        },
+        {
+          "src": "assets/photos/oceanpark2007/06.jpg",
+          "thumb": "assets/photos/oceanpark2007/t/06.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "秋千",
+          "note": "荡起来，风是甜的"
+        },
+        {
+          "src": "assets/photos/oceanpark2007/07.jpg",
+          "thumb": "assets/photos/oceanpark2007/t/07.jpg",
+          "orient": "landscape",
+          "layout": "left",
+          "caption": "水车",
+          "note": "水推着旧时光，转了一圈又一圈"
+        },
+        {
+          "src": "assets/photos/oceanpark2007/08.jpg",
+          "thumb": "assets/photos/oceanpark2007/t/08.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "船上",
+          "note": "湖很平静，装得下两个影子"
+        },
+        {
+          "src": "assets/photos/oceanpark2007/09.jpg",
+          "thumb": "assets/photos/oceanpark2007/t/09.jpg",
+          "orient": "portrait",
+          "layout": "right",
+          "caption": "妈妈",
+          "note": "那天的风，也吹过她二十岁"
+        },
+        {
+          "src": "assets/photos/oceanpark2007/10.jpg",
+          "thumb": "assets/photos/oceanpark2007/t/10.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "小摄影师",
+          "note": "他举起相机，把这一天拍进了永远"
+        }
+      ]
+    },
+    {
+      "id": "longtou2007",
+      "year": "2007",
+      "date": "2007.03",
+      "dateShort": "03",
+      "place": "广州",
+      "title": "父子爬山",
+      "subtitle": "龙头山森林公园",
+      "cover": "assets/photos/longtou2007/t/01.jpg",
+      "coverBig": "assets/photos/longtou2007/cover.jpg",
+      "lead": [
+        "这次换爸爸带路。",
+        "山不高，一层一层，全是他仰着头才能看见的高度。"
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/longtou2007/01.jpg",
+          "thumb": "assets/photos/longtou2007/t/01.jpg",
+          "orient": "landscape",
+          "layout": "hero",
+          "caption": "山顶",
+          "note": "爸爸站的地方，就是高处"
+        },
+        {
+          "src": "assets/photos/longtou2007/02.jpg",
+          "thumb": "assets/photos/longtou2007/t/02.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "出发",
+          "note": "石阶很长，爸爸说慢慢走"
+        },
+        {
+          "src": "assets/photos/longtou2007/03.jpg",
+          "thumb": "assets/photos/longtou2007/t/03.jpg",
+          "orient": "portrait",
+          "layout": "center",
+          "caption": "台阶",
+          "note": "每一层，都比昨天高一点"
+        },
+        {
+          "src": "assets/photos/longtou2007/04.jpg",
+          "thumb": "assets/photos/longtou2007/t/04.jpg",
+          "orient": "landscape",
+          "layout": "left",
+          "caption": "远眺",
+          "note": "雾还没散，城在山脚下醒来"
+        },
+        {
+          "src": "assets/photos/longtou2007/05.jpg",
+          "thumb": "assets/photos/longtou2007/t/05.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "野花",
+          "note": "没人叫得出名字，它照样开了"
+        },
+        {
+          "src": "assets/photos/longtou2007/06.jpg",
+          "thumb": "assets/photos/longtou2007/t/06.jpg",
+          "orient": "portrait",
+          "layout": "duo",
+          "caption": "加餐",
+          "note": "一个苹果，爬山的甜"
+        },
+        {
+          "src": "assets/photos/longtou2007/07.jpg",
+          "thumb": "assets/photos/longtou2007/t/07.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "山中",
+          "note": "红亭子在雾里，像一页旧信"
+        },
+        {
+          "src": "assets/photos/longtou2007/08.jpg",
+          "thumb": "assets/photos/longtou2007/t/08.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "湖边",
+          "note": "他指着远处——那里他要去"
+        },
+        {
+          "src": "assets/photos/longtou2007/09.jpg",
+          "thumb": "assets/photos/longtou2007/t/09.jpg",
+          "orient": "landscape",
+          "layout": "right",
+          "caption": "龙头",
+          "note": "山有名字，他记住了"
+        },
+        {
+          "src": "assets/photos/longtou2007/10.jpg",
+          "thumb": "assets/photos/longtou2007/t/10.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "山肩上",
+          "note": "坐在山肩上，天下都在脚下"
+        }
+      ]
+    },
+    {
+      "id": "zhuhai2007",
+      "year": "2007",
+      "date": "2007.05",
+      "dateShort": "05",
+      "place": "珠海",
+      "title": "五月，海边的路",
+      "subtitle": "情侣路 · 一家三口",
+      "cover": "assets/photos/zhuhai2007/t/01.jpg",
+      "coverBig": "assets/photos/zhuhai2007/cover.jpg",
+      "lead": [
+        "五月的风，把三个人吹到了一条路上。",
+        "海在左边，家人在身边。"
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/zhuhai2007/01.jpg",
+          "thumb": "assets/photos/zhuhai2007/t/01.jpg",
+          "orient": "landscape",
+          "layout": "hero",
+          "caption": "海风",
+          "note": "张开手，风就从这里经过"
+        },
+        {
+          "src": "assets/photos/zhuhai2007/02.jpg",
+          "thumb": "assets/photos/zhuhai2007/t/02.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "妈妈",
+          "note": "绿衣裳，是海借给她的颜色"
+        },
+        {
+          "src": "assets/photos/zhuhai2007/03.jpg",
+          "thumb": "assets/photos/zhuhai2007/t/03.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "情侣路",
+          "note": "路沿着海，家沿着彼此"
+        },
+        {
+          "src": "assets/photos/zhuhai2007/04.jpg",
+          "thumb": "assets/photos/zhuhai2007/t/04.jpg",
+          "orient": "landscape",
+          "layout": "left",
+          "caption": "石栏",
+          "note": "靠在一起，就是全家福"
+        },
+        {
+          "src": "assets/photos/zhuhai2007/05.jpg",
+          "thumb": "assets/photos/zhuhai2007/t/05.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "比个耶",
+          "note": "快乐很简单，一个手势就行"
+        },
+        {
+          "src": "assets/photos/zhuhai2007/06.jpg",
+          "thumb": "assets/photos/zhuhai2007/t/06.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "少年",
+          "note": "白衬衫的年纪，不慌不忙"
+        },
+        {
+          "src": "assets/photos/zhuhai2007/07.jpg",
+          "thumb": "assets/photos/zhuhai2007/t/07.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "三个人",
+          "note": "相机后面是爸爸，画面里是全世界"
+        },
+        {
+          "src": "assets/photos/zhuhai2007/08.jpg",
+          "thumb": "assets/photos/zhuhai2007/t/08.jpg",
+          "orient": "landscape",
+          "layout": "center",
+          "caption": "并肩",
+          "note": "他们并肩站着，就是岁月本身"
+        },
+        {
+          "src": "assets/photos/zhuhai2007/09.jpg",
+          "thumb": "assets/photos/zhuhai2007/t/09.jpg",
+          "orient": "portrait",
+          "layout": "aside",
+          "caption": "林荫",
+          "note": "一条小路，走了很多年"
+        },
+        {
+          "src": "assets/photos/zhuhai2007/10.jpg",
+          "thumb": "assets/photos/zhuhai2007/t/10.jpg",
+          "orient": "landscape",
+          "layout": "right",
+          "caption": "暮色",
+          "note": "天快黑了，光都落在他身上"
+        }
+      ]
+    },
+    {
+      "id": "chimelong2007",
+      "year": "2007",
+      "date": "2007.05",
+      "dateShort": "05",
+      "place": "广州",
+      "title": "欢乐世界",
+      "subtitle": "长隆欢乐世界 · 春游",
+      "cover": "assets/photos/chimelong2007/t/01.jpg",
+      "coverBig": "assets/photos/chimelong2007/cover.jpg",
+      "lead": [
+        "这一次，他是和一整个班的笑声一起来的。",
+        "尖叫声越大，说明越快乐。"
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/chimelong2007/01.jpg",
+          "thumb": "assets/photos/chimelong2007/t/01.jpg",
+          "orient": "landscape",
+          "layout": "hero",
+          "caption": "十环",
+          "note": "过山车转了十圈，笑声转了一下午"
+        },
+        {
+          "src": "assets/photos/chimelong2007/02.jpg",
+          "thumb": "assets/photos/chimelong2007/t/02.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "大朋友",
+          "note": "老师也张开手——原来大人也会飞"
+        },
+        {
+          "src": "assets/photos/chimelong2007/03.jpg",
+          "thumb": "assets/photos/chimelong2007/t/03.jpg",
+          "orient": "landscape",
+          "layout": "center",
+          "caption": "轨道",
+          "note": "铁轨爬上天，把云当站台"
+        },
+        {
+          "src": "assets/photos/chimelong2007/04.jpg",
+          "thumb": "assets/photos/chimelong2007/t/04.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "同桌",
+          "note": "靠在一起笑的，叫同学"
+        },
+        {
+          "src": "assets/photos/chimelong2007/05.jpg",
+          "thumb": "assets/photos/chimelong2007/t/05.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "吉祥物",
+          "note": "它不说话，笑得最好"
+        },
+        {
+          "src": "assets/photos/chimelong2007/06.jpg",
+          "thumb": "assets/photos/chimelong2007/t/06.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "木马",
+          "note": "木马转圈，童年打转"
+        },
+        {
+          "src": "assets/photos/chimelong2007/07.jpg",
+          "thumb": "assets/photos/chimelong2007/t/07.jpg",
+          "orient": "landscape",
+          "layout": "left",
+          "caption": "激流",
+          "note": "水花溅起来，没有人躲"
+        },
+        {
+          "src": "assets/photos/chimelong2007/08.jpg",
+          "thumb": "assets/photos/chimelong2007/t/08.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "祈愿",
+          "note": "红丝带上，写着说不出口的愿望"
+        },
+        {
+          "src": "assets/photos/chimelong2007/09.jpg",
+          "thumb": "assets/photos/chimelong2007/t/09.jpg",
+          "orient": "landscape",
+          "layout": "right",
+          "caption": "挥手",
+          "note": "转到最高处，他朝人群挥手"
+        },
+        {
+          "src": "assets/photos/chimelong2007/10.jpg",
+          "thumb": "assets/photos/chimelong2007/t/10.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "收队",
+          "note": "那天全班都在一张照片里，谁也没缺"
+        }
+      ]
+    },
+    {
       "id": "xinjiang2019",
       "year": "2019",
       "date": "2019.06.13 — 06.15",
