@@ -1080,6 +1080,297 @@ window.__BLOG_DATA__ = {
       ]
     },
     {
+      "id": "yuexiu2008",
+      "year": "2008",
+      "date": "2008.02",
+      "dateShort": "02",
+      "place": "广州",
+      "title": "五羊城的新年",
+      "subtitle": "文艺汇演 · 越秀公园",
+      "cover": "assets/photos/yuexiu2008/t/01.jpg",
+      "coverBig": "assets/photos/yuexiu2008/cover.jpg",
+      "lead": [
+        "这一年，家搬到了广州。",
+        "新年是这样开始的：先演一场节目，再去逛一座城。"
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/yuexiu2008/01.jpg",
+          "thumb": "assets/photos/yuexiu2008/t/01.jpg",
+          "orient": "landscape",
+          "layout": "hero",
+          "caption": "镇海楼",
+          "note": "楼前站好，就是全家福"
+        },
+        {
+          "src": "assets/photos/yuexiu2008/02.jpg",
+          "thumb": "assets/photos/yuexiu2008/t/02.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "汇演",
+          "note": "演完节目，再去逛公园"
+        },
+        {
+          "src": "assets/photos/yuexiu2008/03.jpg",
+          "thumb": "assets/photos/yuexiu2008/t/03.jpg",
+          "orient": "landscape",
+          "layout": "center",
+          "caption": "琴声",
+          "note": "台侧有人弹琴，台下有人记了一辈子"
+        },
+        {
+          "src": "assets/photos/yuexiu2008/04.jpg",
+          "thumb": "assets/photos/yuexiu2008/t/04.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "喷泉边",
+          "note": "水花不高，笑声很高"
+        },
+        {
+          "src": "assets/photos/yuexiu2008/05.jpg",
+          "thumb": "assets/photos/yuexiu2008/t/05.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "兰花前",
+          "note": "花开得很轻，人站得很近"
+        },
+        {
+          "src": "assets/photos/yuexiu2008/06.jpg",
+          "thumb": "assets/photos/yuexiu2008/t/06.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "龙雕塑",
+          "note": "石头龙也精神，护着一城新年"
+        },
+        {
+          "src": "assets/photos/yuexiu2008/07.jpg",
+          "thumb": "assets/photos/yuexiu2008/t/07.jpg",
+          "orient": "portrait",
+          "layout": "left",
+          "caption": "白塔",
+          "note": "天气很好，影子很整齐"
+        },
+        {
+          "src": "assets/photos/yuexiu2008/08.jpg",
+          "thumb": "assets/photos/yuexiu2008/t/08.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "古炮",
+          "note": "炮口朝着江，我们朝着镜头"
+        },
+        {
+          "src": "assets/photos/yuexiu2008/09.jpg",
+          "thumb": "assets/photos/yuexiu2008/t/09.jpg",
+          "orient": "landscape",
+          "layout": "right",
+          "caption": "石刻",
+          "note": "石头上的字，他一个一个认"
+        },
+        {
+          "src": "assets/photos/yuexiu2008/10.jpg",
+          "thumb": "assets/photos/yuexiu2008/t/10.jpg",
+          "orient": "portrait",
+          "layout": "full",
+          "caption": "五羊",
+          "note": "城的名字，站在他身后"
+        }
+      ]
+    },
+    {
+      "id": "xiangxue2008",
+      "year": "2008",
+      "date": "2008.11",
+      "dateShort": "11",
+      "place": "广州",
+      "title": "香雪的冬天",
+      "subtitle": "香雪小学 · 校园一年",
+      "cover": "assets/photos/xiangxue2008/t/01.jpg",
+      "coverBig": "assets/photos/xiangxue2008/cover.jpg",
+      "lead": [
+        "转学来的第二年，他有了自己的操场。",
+        "下课铃一响，广州的冬天也是热的。"
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/xiangxue2008/01.jpg",
+          "thumb": "assets/photos/xiangxue2008/t/01.jpg",
+          "orient": "landscape",
+          "layout": "hero",
+          "caption": "冲线",
+          "note": "跑道的尽头，风替他鼓掌"
+        },
+        {
+          "src": "assets/photos/xiangxue2008/02.jpg",
+          "thumb": "assets/photos/xiangxue2008/t/02.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "大操场",
+          "note": "旗子一挥，全场都在跑"
+        },
+        {
+          "src": "assets/photos/xiangxue2008/03.jpg",
+          "thumb": "assets/photos/xiangxue2008/t/03.jpg",
+          "orient": "landscape",
+          "layout": "center",
+          "caption": "武术课",
+          "note": "一招一式，都算数"
+        },
+        {
+          "src": "assets/photos/xiangxue2008/04.jpg",
+          "thumb": "assets/photos/xiangxue2008/t/04.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "演出",
+          "note": "灯一亮，冬天就不冷了"
+        },
+        {
+          "src": "assets/photos/xiangxue2008/05.jpg",
+          "thumb": "assets/photos/xiangxue2008/t/05.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "拥抱",
+          "note": "赢了输了的，都抱一下"
+        },
+        {
+          "src": "assets/photos/xiangxue2008/06.jpg",
+          "thumb": "assets/photos/xiangxue2008/t/06.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "起跑",
+          "note": "枪响之前，所有人都是安静的"
+        },
+        {
+          "src": "assets/photos/xiangxue2008/07.jpg",
+          "thumb": "assets/photos/xiangxue2008/t/07.jpg",
+          "orient": "landscape",
+          "layout": "left",
+          "caption": "看台",
+          "note": "红领巾一角，被风掀起来"
+        },
+        {
+          "src": "assets/photos/xiangxue2008/08.jpg",
+          "thumb": "assets/photos/xiangxue2008/t/08.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "领奖",
+          "note": "站上去只要三秒，练了很久"
+        },
+        {
+          "src": "assets/photos/xiangxue2008/09.jpg",
+          "thumb": "assets/photos/xiangxue2008/t/09.jpg",
+          "orient": "landscape",
+          "layout": "right",
+          "caption": "掌声",
+          "note": "掌声很密，落满整个礼堂"
+        },
+        {
+          "src": "assets/photos/xiangxue2008/10.jpg",
+          "thumb": "assets/photos/xiangxue2008/t/10.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "合唱",
+          "note": "全班的声音，往一个方向去"
+        }
+      ]
+    },
+    {
+      "id": "xiqiao2008",
+      "year": "2008",
+      "date": "2008.12",
+      "dateShort": "12",
+      "place": "佛山",
+      "title": "西樵山看狮",
+      "subtitle": "西樵山 · 集体登山",
+      "cover": "assets/photos/xiqiao2008/t/01.jpg",
+      "coverBig": "assets/photos/xiqiao2008/cover.jpg",
+      "lead": [
+        "年底跟着大部队去佛山。",
+        "山上有狮子，桩有多高，看的人心就悬多高。"
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/xiqiao2008/01.jpg",
+          "thumb": "assets/photos/xiqiao2008/t/01.jpg",
+          "orient": "landscape",
+          "layout": "hero",
+          "caption": "山顶",
+          "note": "云很低，山把楼托在手里"
+        },
+        {
+          "src": "assets/photos/xiqiao2008/02.jpg",
+          "thumb": "assets/photos/xiqiao2008/t/02.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "挥手",
+          "note": "隔着湖打招呼，风替我们传话"
+        },
+        {
+          "src": "assets/photos/xiqiao2008/03.jpg",
+          "thumb": "assets/photos/xiqiao2008/t/03.jpg",
+          "orient": "landscape",
+          "layout": "center",
+          "caption": "舞龙",
+          "note": "龙过处，人群自动让路"
+        },
+        {
+          "src": "assets/photos/xiqiao2008/04.jpg",
+          "thumb": "assets/photos/xiqiao2008/t/04.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "石碑",
+          "note": "合过影的山，就算来过了"
+        },
+        {
+          "src": "assets/photos/xiqiao2008/05.jpg",
+          "thumb": "assets/photos/xiqiao2008/t/05.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "牌坊",
+          "note": "门很大，装得下一整个队伍"
+        },
+        {
+          "src": "assets/photos/xiqiao2008/06.jpg",
+          "thumb": "assets/photos/xiqiao2008/t/06.jpg",
+          "orient": "portrait",
+          "layout": "left",
+          "caption": "观音",
+          "note": "山上有人许愿，山下有人鼓掌"
+        },
+        {
+          "src": "assets/photos/xiqiao2008/07.jpg",
+          "thumb": "assets/photos/xiqiao2008/t/07.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "跳跃",
+          "note": "跳起来那下，山也跟着轻"
+        },
+        {
+          "src": "assets/photos/xiqiao2008/08.jpg",
+          "thumb": "assets/photos/xiqiao2008/t/08.jpg",
+          "orient": "portrait",
+          "layout": "right",
+          "caption": "醒狮",
+          "note": "狮子跳桩，看得忘了呼吸"
+        },
+        {
+          "src": "assets/photos/xiqiao2008/09.jpg",
+          "thumb": "assets/photos/xiqiao2008/t/09.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "山旗",
+          "note": "一面旗，把队伍串在一起"
+        },
+        {
+          "src": "assets/photos/xiqiao2008/10.jpg",
+          "thumb": "assets/photos/xiqiao2008/t/10.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "狮台",
+          "note": "鼓点停了，心跳还在响"
+        }
+      ]
+    },
+    {
       "id": "xinjiang2019",
       "year": "2019",
       "date": "2019.06.13 — 06.15",
