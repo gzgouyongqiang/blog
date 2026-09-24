@@ -47,7 +47,15 @@
       <div class="section-en">Albums</div>
       <h2 class="section-title">相册</h2>
     </div>
-    <div class="timeline" id="timeline"></div>
+    <div class="reel-head">
+      <div class="reel-hint">转动滚轮 · 岁月向右展开</div>
+      <div class="reel-nav">
+        <button class="reel-btn" id="reelPrev" aria-label="向前">←</button>
+        <button class="reel-btn" id="reelNext" aria-label="向后">→</button>
+      </div>
+    </div>
+    <div class="timeline reel" id="timeline"></div>
+    <div class="reel-progress"><i class="reel-bar" id="reelBar"></i></div>
   </div>
 </section>
 

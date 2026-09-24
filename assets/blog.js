@@ -55,8 +55,22 @@
   }
 
   /* ============================================
-     首页：年份时间轴
+     首页：胶片长卷（横向滚筒）
      ============================================ */
+  function cardHTML(t) {
+    var intro = (t.lead && t.lead.length) ? t.lead[0] : '';
+    return '<a class="trip-card" href="trip.html?id=' + encodeURIComponent(t.id) + '" draggable="false">' +
+      '<div class="trip-cover"><img src="' + esc(t.cover) + '" alt="" loading="lazy" draggable="false"></div>' +
+      '<div class="trip-body">' +
+        '<div class="trip-date">' + esc(t.dateShort || t.date || '') + '</div>' +
+        '<div class="trip-title">' + esc(t.title || '') + '</div>' +
+        (t.subtitle ? '<div class="trip-sub">' + esc(t.subtitle) + '</div>' : '') +
+        (intro ? '<div class="trip-intro">' + esc(intro) + '</div>' : '') +
+        '<div class="trip-more">走进这段行程</div>' +
+      '</div>' +
+    '</a>';
+  }
+
   function renderTimeline(trips) {
     if (!trips || !trips.length) {
       timeline.innerHTML = empty('— — —', '相册正在整理中');
@@ -79,33 +93,85 @@
       });
 
       html +=
-        '<div class="year-block">' +
-          '<div class="year-line">' +
-            '<div class="year-num">' + esc(y) + '</div>' +
-            '<div class="year-rule"></div>' +
-            '<div class="year-count">' + list.length + ' 段行程</div>' +
-          '</div>' +
-          '<div class="trip-list">';
-
-      list.forEach(function (t) {
-        var intro = (t.lead && t.lead.length) ? t.lead[0] : '';
-        html +=
-          '<a class="trip-card" href="trip.html?id=' + encodeURIComponent(t.id) + '">' +
-            '<div class="trip-cover"><img src="' + esc(t.cover) + '" alt="" loading="lazy"></div>' +
-            '<div class="trip-body">' +
-              '<div class="trip-date">' + esc(t.dateShort || t.date || '') + '</div>' +
-              '<div class="trip-title">' + esc(t.title || '') + '</div>' +
-              (t.subtitle ? '<div class="trip-sub">' + esc(t.subtitle) + '</div>' : '') +
-              (intro ? '<div class="trip-intro">' + esc(intro) + '</div>' : '') +
-              '<div class="trip-more">走进这段行程</div>' +
-            '</div>' +
-          '</a>';
-      });
-
-      html += '</div></div>';
+        '<div class="era">' +
+          '<div class="era-year">' + esc(y) + '</div>' +
+          '<div class="era-count">' + list.length + ' 段</div>' +
+        '</div>';
+      list.forEach(function (t) { html += cardHTML(t); });
     });
 
     timeline.innerHTML = html;
+    setupReel();
+  }
+
+  /* 长卷交互：滚轮映射横向 / 鼠标拖拽 / 箭头 / 进度条 */
+  function setupReel() {
+    var reel = timeline;
+    if (!reel || reel.dataset.reelBound) return;
+    reel.dataset.reelBound = '1';
+
+    /* 滚轮：竖向滚轮量映射为横向滚动；到卷头卷尾时放行页面滚动 */
+    reel.addEventListener('wheel', function (e) {
+      if (Math.abs(e.deltaY) <= Math.abs(e.deltaX)) return; /* 触控板横滑走原生 */
+      var max = reel.scrollWidth - reel.clientWidth;
+      if (max <= 0) return;
+      var going = e.deltaY > 0 ? 1 : -1;
+      var canGo = (going > 0 && reel.scrollLeft < max - 1) ||
+                  (going < 0 && reel.scrollLeft > 1);
+      if (!canGo) return; /* 到头了，放行页面滚动 */
+      e.preventDefault();
+      reel.scrollLeft += e.deltaY;
+    }, { passive: false });
+
+    /* 鼠标拖拽（触屏用原生滑动）
+       注意：pointerdown 时不能立刻 setPointerCapture，
+       否则 click 会被重定向到容器、卡片链接失效；
+       只在真正拖动超过阈值后才 capture。 */
+    var down = false, sx = 0, sl = 0, moved = false;
+    reel.addEventListener('pointerdown', function (e) {
+      if (e.pointerType !== 'mouse') return;
+      down = true; moved = false;
+      sx = e.clientX; sl = reel.scrollLeft;
+    });
+    reel.addEventListener('pointermove', function (e) {
+      if (!down) return;
+      var dx = e.clientX - sx;
+      if (!moved && Math.abs(dx) > 4) {
+        moved = true;
+        reel.classList.add('dragging');
+        try { reel.setPointerCapture(e.pointerId); } catch (err) { /* 忽略 */ }
+      }
+      if (moved) reel.scrollLeft = sl - dx;
+    });
+    ['pointerup', 'pointercancel'].forEach(function (ev) {
+      reel.addEventListener(ev, function () {
+        down = false;
+        reel.classList.remove('dragging');
+      });
+    });
+    /* 拖拽结束的那一下不触发卡片跳转 */
+    reel.addEventListener('click', function (e) {
+      if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; }
+    }, true);
+
+    /* 箭头 */
+    var prev = document.getElementById('reelPrev');
+    var next = document.getElementById('reelNext');
+    if (prev) prev.addEventListener('click', function () { reel.scrollBy({ left: -700, behavior: 'smooth' }); });
+    if (next) next.addEventListener('click', function () { reel.scrollBy({ left: 700, behavior: 'smooth' }); });
+
+    /* 进度条 + 箭头淡出 */
+    var bar = document.getElementById('reelBar');
+    function upd() {
+      var max = reel.scrollWidth - reel.clientWidth;
+      var r = max > 0 ? reel.scrollLeft / max : 0;
+      if (bar) bar.style.width = (8 + r * 92) + '%';
+      if (prev) prev.style.opacity = (max > 0 && reel.scrollLeft > 4) ? 1 : .3;
+      if (next) next.style.opacity = (max > 0 && reel.scrollLeft < max - 4) ? 1 : .3;
+    }
+    reel.addEventListener('scroll', upd, { passive: true });
+    window.addEventListener('resize', upd);
+    upd();
   }
 
   function renderStats(trips) {

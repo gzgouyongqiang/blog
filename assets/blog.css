@@ -116,60 +116,111 @@ img { display: block; max-width: 100%; height: auto; }
   letter-spacing: .3em; color: var(--ink); padding-left: .3em;
 }
 
-/* ===== 年份时间轴（首页）===== */
-.year-block { margin-bottom: 66px; }
-.year-block:last-child { margin-bottom: 0; }
-.year-line { display: flex; align-items: center; gap: 18px; margin-bottom: 26px; }
-.year-num {
-  font-family: var(--serif); font-size: 26px; font-weight: 400;
-  color: var(--ink); letter-spacing: .1em; line-height: 1;
+/* ===== 胶片长卷（首页·横向滚筒）===== */
+.reel-head {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 26px;
 }
-.year-rule { flex: 1; height: 1px; background: var(--line); }
-.year-count { font-size: 11px; color: var(--ink-faint); letter-spacing: .18em; }
+.reel-hint {
+  font-size: 11px; color: var(--ink-faint);
+  letter-spacing: .22em;
+}
+.reel-nav { display: flex; gap: 10px; }
+.reel-btn {
+  width: 42px; height: 42px; border: 1px solid var(--line);
+  background: var(--card); border-radius: 50%;
+  color: var(--ink-light); font-size: 17px; line-height: 1;
+  cursor: pointer; transition: border-color .3s, color .3s, opacity .3s;
+  font-family: var(--serif);
+}
+.reel-btn:hover { border-color: var(--accent); color: var(--accent); }
 
-.trip-list { display: grid; gap: 28px; }
+.reel {
+  display: flex; align-items: stretch; gap: 26px;
+  overflow-x: auto; overflow-y: hidden;
+  padding: 6px 4px 28px;
+  cursor: grab;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.reel::-webkit-scrollbar { display: none; }
+.reel.dragging { cursor: grabbing; scroll-snap-type: none; }
+.reel { -webkit-user-select: none; user-select: none; }
+.reel img { -webkit-user-drag: none; }
 
-/* ===== 行程卡（首页）===== */
-.trip-card {
-  display: grid; grid-template-columns: 300px 1fr;
+/* 年代分隔牌 */
+.era {
+  flex: 0 0 auto; scroll-snap-align: start;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  min-width: 100px; padding: 0 26px 10px 0;
+  border-right: 1px solid var(--line);
+}
+.era-year {
+  font-family: var(--serif); font-size: 46px; font-weight: 400;
+  color: var(--ink); line-height: 1.1; letter-spacing: .04em;
+}
+.era-count {
+  font-size: 10.5px; color: var(--ink-faint);
+  letter-spacing: .24em; margin-top: 10px;
+}
+
+/* 行程卡（横筒内竖版）*/
+.reel .trip-card {
+  flex: 0 0 300px; display: flex; flex-direction: column;
+  scroll-snap-align: center;
   background: var(--card); border: 1px solid var(--line-soft);
   border-radius: 3px; overflow: hidden;
   transition: transform .5s cubic-bezier(.2,.8,.2,1), box-shadow .5s, border-color .5s;
 }
-.trip-card:hover {
+.reel .trip-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-hover);
   border-color: var(--line);
 }
-.trip-cover { overflow: hidden; background: var(--paper-warm); }
-.trip-cover img {
-  width: 100%; height: 100%; object-fit: cover;
+.reel .trip-cover { overflow: hidden; background: var(--paper-warm); flex: 0 0 auto; }
+.reel .trip-cover img {
+  width: 100%; height: 195px; object-fit: cover; display: block;
   transition: transform 1.4s cubic-bezier(.2,.8,.2,1);
+  pointer-events: none;
 }
-.trip-card:hover .trip-cover img { transform: scale(1.045); }
-.trip-body { padding: 30px 34px; display: flex; flex-direction: column; justify-content: center; }
-.trip-date {
-  font-size: 11px; color: var(--ink-faint);
-  letter-spacing: .2em; margin-bottom: 12px;
+.reel .trip-card:hover .trip-cover img { transform: scale(1.045); }
+.reel .trip-body {
+  padding: 20px 22px 22px; flex: 1;
+  display: flex; flex-direction: column; align-items: flex-start;
 }
-.trip-title {
-  font-family: var(--serif); font-size: 23px; font-weight: 400;
-  letter-spacing: .12em; color: var(--ink); line-height: 1.5;
+.reel .trip-date {
+  font-size: 10.5px; color: var(--ink-faint);
+  letter-spacing: .2em; margin-bottom: 8px;
 }
-.trip-sub {
-  font-size: 12.5px; color: var(--accent); letter-spacing: .1em;
-  margin-top: 9px;
+.reel .trip-title {
+  font-family: var(--serif); font-size: 18.5px; font-weight: 400;
+  letter-spacing: .1em; color: var(--ink); line-height: 1.55;
 }
-.trip-intro {
-  font-size: 13px; color: var(--ink-light); line-height: 2.05;
-  margin-top: 15px; letter-spacing: .04em;
+.reel .trip-sub {
+  font-size: 12px; color: var(--accent); letter-spacing: .08em; margin-top: 7px;
+}
+.reel .trip-intro {
+  font-size: 12.5px; color: var(--ink-light); line-height: 1.95;
+  margin-top: 10px; letter-spacing: .03em;
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
 }
-.trip-more {
-  font-size: 11.5px; color: var(--accent);
-  letter-spacing: .2em; margin-top: 18px;
+.reel .trip-more {
+  font-size: 11px; color: var(--accent);
+  letter-spacing: .2em; margin-top: auto; padding-top: 16px;
 }
-.trip-more::after { content: " →"; }
+.reel .trip-more::after { content: " →"; }
+
+/* 进度条 */
+.reel-progress {
+  height: 2px; background: var(--line-soft);
+  border-radius: 2px; overflow: hidden; margin-top: 4px;
+}
+.reel-bar {
+  display: block; height: 100%; width: 8%;
+  background: var(--accent-soft); border-radius: 2px;
+  transition: width .25s ease;
+}
 
 /* ==========================================================
    行程详情页
@@ -356,10 +407,14 @@ img { display: block; max-width: 100%; height: auto; }
   .stat-num { font-size: 26px; }
   .section { padding: 0 22px 80px; }
 
-  /* 首页卡片改竖排 */
-  .trip-card { grid-template-columns: 1fr; }
-  .trip-cover img { height: 210px; }
-  .trip-body { padding: 24px 24px 28px; }
+  /* 胶片长卷：触屏原生横滑，隐藏箭头 */
+  .reel-btn, .reel-hint { display: none; }
+  .reel { gap: 16px; padding: 4px 18px 22px; cursor: default; }
+  .era { min-width: 64px; padding-right: 14px; }
+  .era-year { font-size: 30px; }
+  .reel .trip-card { flex: 0 0 72vw; }
+  .reel .trip-cover img { height: 200px; }
+  .reel .trip-body { padding: 20px 20px 22px; }
 
   /* 行程页：栅格收紧 */
   .trip-hero, .flow, .trip-end { padding-left: 22px; padding-right: 22px; }
