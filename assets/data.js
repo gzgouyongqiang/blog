@@ -110,6 +110,200 @@ window.__BLOG_DATA__ = {
       ]
     },
     {
+      "id": "zhuhai2005",
+      "year": "2005",
+      "date": "2005.09",
+      "dateShort": "09",
+      "place": "珠海",
+      "title": "第一次住校",
+      "subtitle": "珠海北大附属实验学校",
+      "cover": "assets/photos/zhuhai2005/t/01.jpg",
+      "coverBig": "assets/photos/zhuhai2005/cover.jpg",
+      "lead": [
+        "二〇〇五年九月，书包比人宽。",
+        "学校在珠海，家在周末那头。"
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/zhuhai2005/01.jpg",
+          "thumb": "assets/photos/zhuhai2005/t/01.jpg",
+          "orient": "landscape",
+          "layout": "hero",
+          "caption": "校门口",
+          "note": "书包很沉，装着半个家。"
+        },
+        {
+          "src": "assets/photos/zhuhai2005/02.jpg",
+          "thumb": "assets/photos/zhuhai2005/t/02.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "第一天",
+          "note": "床很硬，梦很新。"
+        },
+        {
+          "src": "assets/photos/zhuhai2005/03.jpg",
+          "thumb": "assets/photos/zhuhai2005/t/03.jpg",
+          "orient": "landscape",
+          "layout": "center",
+          "caption": "合影",
+          "note": "挥挥手，日子换了一种过法。"
+        },
+        {
+          "src": "assets/photos/zhuhai2005/04.jpg",
+          "thumb": "assets/photos/zhuhai2005/t/04.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "红衣少年",
+          "note": "笑起来，像九月的光。"
+        },
+        {
+          "src": "assets/photos/zhuhai2005/05.jpg",
+          "thumb": "assets/photos/zhuhai2005/t/05.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "操场",
+          "note": "操场很大，装得下想家。"
+        },
+        {
+          "src": "assets/photos/zhuhai2005/06.jpg",
+          "thumb": "assets/photos/zhuhai2005/t/06.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "天下为公",
+          "note": "牌坊下走过，脚步轻一点。"
+        },
+        {
+          "src": "assets/photos/zhuhai2005/07.jpg",
+          "thumb": "assets/photos/zhuhai2005/t/07.jpg",
+          "orient": "portrait",
+          "layout": "left",
+          "caption": "雕像前",
+          "note": "先生看着，小孩长大。"
+        },
+        {
+          "src": "assets/photos/zhuhai2005/08.jpg",
+          "thumb": "assets/photos/zhuhai2005/t/08.jpg",
+          "orient": "portrait",
+          "layout": "aside",
+          "caption": "故居",
+          "note": "一百年的门，今天为我们开。"
+        },
+        {
+          "src": "assets/photos/zhuhai2005/09.jpg",
+          "thumb": "assets/photos/zhuhai2005/t/09.jpg",
+          "orient": "landscape",
+          "layout": "right",
+          "caption": "台阶上",
+          "note": "拐角回头，笑得很响。"
+        },
+        {
+          "src": "assets/photos/zhuhai2005/10.jpg",
+          "thumb": "assets/photos/zhuhai2005/t/10.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "长椅上",
+          "note": "妈妈的胳膊，是最近的故乡。"
+        }
+      ]
+    },
+    {
+      "id": "school2005",
+      "year": "2005",
+      "date": "2005.11 — 12",
+      "dateShort": "11 — 12",
+      "place": "珠海",
+      "title": "学校里的家",
+      "subtitle": "生日 · 影视城 · 艺术节",
+      "cover": "assets/photos/school2005/t/01.jpg",
+      "coverBig": "assets/photos/school2005/cover.jpg",
+      "lead": [
+        "生日在学校过，蛋糕分给同学。",
+        "周末家人来，围巾是红的，日子是暖的。"
+      ],
+      "photos": [
+        {
+          "src": "assets/photos/school2005/01.jpg",
+          "thumb": "assets/photos/school2005/t/01.jpg",
+          "orient": "landscape",
+          "layout": "hero",
+          "caption": "红围巾",
+          "note": "妈妈来了，教室的风都暖了。"
+        },
+        {
+          "src": "assets/photos/school2005/02.jpg",
+          "thumb": "assets/photos/school2005/t/02.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "蛋糕",
+          "note": "甜的，分一半给同学。"
+        },
+        {
+          "src": "assets/photos/school2005/03.jpg",
+          "thumb": "assets/photos/school2005/t/03.jpg",
+          "orient": "landscape",
+          "layout": "center",
+          "caption": "生日歌",
+          "note": "切蛋糕的手，很稳。"
+        },
+        {
+          "src": "assets/photos/school2005/04.jpg",
+          "thumb": "assets/photos/school2005/t/04.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "爷爷奶奶",
+          "note": "坐了很久的车，只为看一眼。"
+        },
+        {
+          "src": "assets/photos/school2005/05.jpg",
+          "thumb": "assets/photos/school2005/t/05.jpg",
+          "orient": "landscape",
+          "layout": "duo",
+          "caption": "影视城",
+          "note": "戏是假的，笑是真的。"
+        },
+        {
+          "src": "assets/photos/school2005/06.jpg",
+          "thumb": "assets/photos/school2005/t/06.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "雕像前",
+          "note": "风把头发吹起来。"
+        },
+        {
+          "src": "assets/photos/school2005/07.jpg",
+          "thumb": "assets/photos/school2005/t/07.jpg",
+          "orient": "portrait",
+          "layout": "left",
+          "caption": "合影",
+          "note": "靠得近一点，再近一点。"
+        },
+        {
+          "src": "assets/photos/school2005/08.jpg",
+          "thumb": "assets/photos/school2005/t/08.jpg",
+          "orient": "landscape",
+          "layout": "aside",
+          "caption": "红围巾",
+          "note": "围巾一红，冬天就不冷了。"
+        },
+        {
+          "src": "assets/photos/school2005/09.jpg",
+          "thumb": "assets/photos/school2005/t/09.jpg",
+          "orient": "landscape",
+          "layout": "right",
+          "caption": "艺术节",
+          "note": "台上一分钟，台下练了很久。"
+        },
+        {
+          "src": "assets/photos/school2005/10.jpg",
+          "thumb": "assets/photos/school2005/t/10.jpg",
+          "orient": "landscape",
+          "layout": "full",
+          "caption": "钢琴",
+          "note": "琴声漫过礼堂，像月光。"
+        }
+      ]
+    },
+    {
       "id": "xinjiang2019",
       "year": "2019",
       "date": "2019.06.13 — 06.15",
