@@ -250,8 +250,8 @@ window.__BLOG_DATA__ = {
           "thumb": "assets/photos/school2005/t/04.jpg",
           "orient": "landscape",
           "layout": "duo",
-          "caption": "爷爷奶奶",
-          "note": "坐了很久的车，只为看一眼。"
+          "caption": "一家人",
+          "note": "一个下午，三个人，站成一排。"
         },
         {
           "src": "assets/photos/school2005/05.jpg",
@@ -517,8 +517,8 @@ window.__BLOG_DATA__ = {
           "thumb": "assets/photos/school2006/t/01.jpg",
           "orient": "landscape",
           "layout": "hero",
-          "caption": "起跑",
-          "note": "跑道尽头，是更快的自己。"
+          "caption": "操场上",
+          "note": "风把校服吹得鼓鼓的，四个人比同一个手势。"
         },
         {
           "src": "assets/photos/school2006/02.jpg",
@@ -557,8 +557,8 @@ window.__BLOG_DATA__ = {
           "thumb": "assets/photos/school2006/t/06.jpg",
           "orient": "landscape",
           "layout": "full",
-          "caption": "广播操",
-          "note": "几百个人，做同一个动作。"
+          "caption": "候场",
+          "note": "上台前，先在后台玩一小会儿。"
         },
         {
           "src": "assets/photos/school2006/07.jpg",
@@ -573,8 +573,8 @@ window.__BLOG_DATA__ = {
           "thumb": "assets/photos/school2006/t/08.jpg",
           "orient": "landscape",
           "layout": "aside",
-          "caption": "落沙",
-          "note": "摔进软软的胜利里。"
+          "caption": "两个柿子",
+          "note": "周末带回来的，甜到眯起眼睛。"
         },
         {
           "src": "assets/photos/school2006/09.jpg",
@@ -646,16 +646,16 @@ window.__BLOG_DATA__ = {
           "thumb": "assets/photos/guangzhou2006/t/05.jpg",
           "orient": "landscape",
           "layout": "duo",
-          "caption": "合影",
-          "note": "三个人，三种笑容。"
+          "caption": "妈妈也来了",
+          "note": "栏杆边站着，身后是整座山。"
         },
         {
           "src": "assets/photos/guangzhou2006/06.jpg",
           "thumb": "assets/photos/guangzhou2006/t/06.jpg",
           "orient": "landscape",
           "layout": "full",
-          "caption": "桥灯",
-          "note": "灯把桥点着了，水替它传出去。"
+          "caption": "我们仨",
+          "note": "船头风大，三个人的笑一样大。"
         },
         {
           "src": "assets/photos/guangzhou2006/07.jpg",
@@ -983,103 +983,6 @@ window.__BLOG_DATA__ = {
       ]
     },
     {
-      "id": "chimelong2007",
-      "year": "2007",
-      "date": "2007.05",
-      "dateShort": "05",
-      "place": "广州",
-      "title": "欢乐世界",
-      "subtitle": "长隆欢乐世界 · 春游",
-      "cover": "assets/photos/chimelong2007/t/01.jpg",
-      "coverBig": "assets/photos/chimelong2007/cover.jpg",
-      "lead": [
-        "这一次，他是和一整个班的笑声一起来的。",
-        "尖叫声越大，说明越快乐。"
-      ],
-      "photos": [
-        {
-          "src": "assets/photos/chimelong2007/01.jpg",
-          "thumb": "assets/photos/chimelong2007/t/01.jpg",
-          "orient": "landscape",
-          "layout": "hero",
-          "caption": "十环",
-          "note": "过山车转了十圈，笑声转了一下午"
-        },
-        {
-          "src": "assets/photos/chimelong2007/02.jpg",
-          "thumb": "assets/photos/chimelong2007/t/02.jpg",
-          "orient": "landscape",
-          "layout": "aside",
-          "caption": "大朋友",
-          "note": "老师也张开手——原来大人也会飞"
-        },
-        {
-          "src": "assets/photos/chimelong2007/03.jpg",
-          "thumb": "assets/photos/chimelong2007/t/03.jpg",
-          "orient": "landscape",
-          "layout": "center",
-          "caption": "轨道",
-          "note": "铁轨爬上天，把云当站台"
-        },
-        {
-          "src": "assets/photos/chimelong2007/04.jpg",
-          "thumb": "assets/photos/chimelong2007/t/04.jpg",
-          "orient": "landscape",
-          "layout": "duo",
-          "caption": "同桌",
-          "note": "靠在一起笑的，叫同学"
-        },
-        {
-          "src": "assets/photos/chimelong2007/05.jpg",
-          "thumb": "assets/photos/chimelong2007/t/05.jpg",
-          "orient": "landscape",
-          "layout": "duo",
-          "caption": "吉祥物",
-          "note": "它不说话，笑得最好"
-        },
-        {
-          "src": "assets/photos/chimelong2007/06.jpg",
-          "thumb": "assets/photos/chimelong2007/t/06.jpg",
-          "orient": "landscape",
-          "layout": "full",
-          "caption": "木马",
-          "note": "木马转圈，童年打转"
-        },
-        {
-          "src": "assets/photos/chimelong2007/07.jpg",
-          "thumb": "assets/photos/chimelong2007/t/07.jpg",
-          "orient": "landscape",
-          "layout": "left",
-          "caption": "激流",
-          "note": "水花溅起来，没有人躲"
-        },
-        {
-          "src": "assets/photos/chimelong2007/08.jpg",
-          "thumb": "assets/photos/chimelong2007/t/08.jpg",
-          "orient": "landscape",
-          "layout": "aside",
-          "caption": "祈愿",
-          "note": "红丝带上，写着说不出口的愿望"
-        },
-        {
-          "src": "assets/photos/chimelong2007/09.jpg",
-          "thumb": "assets/photos/chimelong2007/t/09.jpg",
-          "orient": "landscape",
-          "layout": "right",
-          "caption": "挥手",
-          "note": "转到最高处，他朝人群挥手"
-        },
-        {
-          "src": "assets/photos/chimelong2007/10.jpg",
-          "thumb": "assets/photos/chimelong2007/t/10.jpg",
-          "orient": "landscape",
-          "layout": "full",
-          "caption": "收队",
-          "note": "那天全班都在一张照片里，谁也没缺"
-        }
-      ]
-    },
-    {
       "id": "yuexiu2008",
       "year": "2008",
       "date": "2008.02",
@@ -1270,103 +1173,6 @@ window.__BLOG_DATA__ = {
           "layout": "full",
           "caption": "合唱",
           "note": "全班的声音，往一个方向去"
-        }
-      ]
-    },
-    {
-      "id": "xiqiao2008",
-      "year": "2008",
-      "date": "2008.12",
-      "dateShort": "12",
-      "place": "佛山",
-      "title": "西樵山看狮",
-      "subtitle": "西樵山 · 集体登山",
-      "cover": "assets/photos/xiqiao2008/t/01.jpg",
-      "coverBig": "assets/photos/xiqiao2008/cover.jpg",
-      "lead": [
-        "年底跟着大部队去佛山。",
-        "山上有狮子，桩有多高，看的人心就悬多高。"
-      ],
-      "photos": [
-        {
-          "src": "assets/photos/xiqiao2008/01.jpg",
-          "thumb": "assets/photos/xiqiao2008/t/01.jpg",
-          "orient": "landscape",
-          "layout": "hero",
-          "caption": "山顶",
-          "note": "云很低，山把楼托在手里"
-        },
-        {
-          "src": "assets/photos/xiqiao2008/02.jpg",
-          "thumb": "assets/photos/xiqiao2008/t/02.jpg",
-          "orient": "landscape",
-          "layout": "aside",
-          "caption": "挥手",
-          "note": "隔着湖打招呼，风替我们传话"
-        },
-        {
-          "src": "assets/photos/xiqiao2008/03.jpg",
-          "thumb": "assets/photos/xiqiao2008/t/03.jpg",
-          "orient": "landscape",
-          "layout": "center",
-          "caption": "舞龙",
-          "note": "龙过处，人群自动让路"
-        },
-        {
-          "src": "assets/photos/xiqiao2008/04.jpg",
-          "thumb": "assets/photos/xiqiao2008/t/04.jpg",
-          "orient": "landscape",
-          "layout": "duo",
-          "caption": "石碑",
-          "note": "合过影的山，就算来过了"
-        },
-        {
-          "src": "assets/photos/xiqiao2008/05.jpg",
-          "thumb": "assets/photos/xiqiao2008/t/05.jpg",
-          "orient": "landscape",
-          "layout": "duo",
-          "caption": "牌坊",
-          "note": "门很大，装得下一整个队伍"
-        },
-        {
-          "src": "assets/photos/xiqiao2008/06.jpg",
-          "thumb": "assets/photos/xiqiao2008/t/06.jpg",
-          "orient": "portrait",
-          "layout": "left",
-          "caption": "观音",
-          "note": "山上有人许愿，山下有人鼓掌"
-        },
-        {
-          "src": "assets/photos/xiqiao2008/07.jpg",
-          "thumb": "assets/photos/xiqiao2008/t/07.jpg",
-          "orient": "landscape",
-          "layout": "aside",
-          "caption": "跳跃",
-          "note": "跳起来那下，山也跟着轻"
-        },
-        {
-          "src": "assets/photos/xiqiao2008/08.jpg",
-          "thumb": "assets/photos/xiqiao2008/t/08.jpg",
-          "orient": "portrait",
-          "layout": "right",
-          "caption": "醒狮",
-          "note": "狮子跳桩，看得忘了呼吸"
-        },
-        {
-          "src": "assets/photos/xiqiao2008/09.jpg",
-          "thumb": "assets/photos/xiqiao2008/t/09.jpg",
-          "orient": "landscape",
-          "layout": "aside",
-          "caption": "山旗",
-          "note": "一面旗，把队伍串在一起"
-        },
-        {
-          "src": "assets/photos/xiqiao2008/10.jpg",
-          "thumb": "assets/photos/xiqiao2008/t/10.jpg",
-          "orient": "landscape",
-          "layout": "full",
-          "caption": "狮台",
-          "note": "鼓点停了，心跳还在响"
         }
       ]
     },
