@@ -30,27 +30,67 @@
     return '<div class="empty"><div class="empty-mark">' + esc(mark) + '</div>' + esc(text) + '</div>';
   }
 
-  /* ---------- 灯箱 ---------- */
-  var lb    = document.getElementById('lightbox');
-  var lbImg = document.getElementById('lightboxImg');
-  var lbCap = document.getElementById('lightboxCap');
+  /* ---------- 灯箱（支持键盘翻页 + 切换动画） ---------- */
+  var lb      = document.getElementById('lightbox');
+  var lbImg   = document.getElementById('lightboxImg');
+  var lbCap   = document.getElementById('lbCap');
+  var lbNote  = document.getElementById('lbNote');
+  var lbDate  = document.getElementById('lbDate');
+  var lbPrev  = document.getElementById('lbPrev');
+  var lbNext  = document.getElementById('lbNext');
+  var lbClose = document.getElementById('lbClose');
+  var lbList = null, lbIdx = -1, lbDateText = '';
 
-  function openLightbox(src, cap) {
+  function lbRender() {
+    if (!lbList || lbIdx < 0) return;
+    var p = lbList[lbIdx];
+    lbImg.classList.add('switching');
+    var im = new Image();
+    im.onload = function () {
+      lbImg.src = p.src;
+      lbImg.alt = p.caption || '';
+      lbImg.classList.remove('switching');
+    };
+    im.src = p.src;
+    lbCap.textContent  = p.caption || '';
+    lbNote.textContent = p.note || '';
+    lbDate.textContent = lbDateText ? (lbDateText + ' · ' + String(lbIdx + 1).padStart(2, '0') + ' / ' + String(lbList.length).padStart(2, '0')) : '';
+    if (lbPrev) lbPrev.classList.toggle('hide', lbIdx <= 0);
+    if (lbNext) lbNext.classList.toggle('hide', lbIdx >= lbList.length - 1);
+  }
+  function openLightbox(photos, idx, dateText) {
     if (!lb) return;
-    lbImg.src = src;
-    lbImg.alt = cap || '';
-    lbCap.textContent = cap || '';
+    lbList = photos; lbIdx = idx; lbDateText = dateText || '';
+    lbRender();
     lb.classList.add('on');
+    document.body.style.overflow = 'hidden';
   }
   function closeLightbox() {
     if (!lb) return;
     lb.classList.remove('on');
     lbImg.src = '';
+    lbList = null; lbIdx = -1;
+    document.body.style.overflow = '';
+  }
+  function lbStep(d) {
+    if (!lbList) return;
+    var n = lbIdx + d;
+    if (n < 0 || n >= lbList.length) return;
+    lbIdx = n;
+    lbRender();
   }
   if (lb) {
-    lb.addEventListener('click', closeLightbox);
+    lb.addEventListener('click', function (e) {
+      if (e.target === lb || e.target === lbImg) closeLightbox();
+    });
+    lbClose && lbClose.addEventListener('click', closeLightbox);
+    lbPrev && lbPrev.addEventListener('click', function (e) { e.stopPropagation(); lbStep(-1); });
+    lbNext && lbNext.addEventListener('click', function (e) { e.stopPropagation(); lbStep(1); });
     document.addEventListener('keydown', function (e) {
+      if (!lb.classList.contains('on')) return;
       if (e.key === 'Escape') closeLightbox();
+      else if (e.key === 'ArrowLeft') lbStep(-1);
+      else if (e.key === 'ArrowRight') lbStep(1);
     });
   }
 
@@ -93,7 +133,7 @@
       });
 
       html +=
-        '<div class="era">' +
+        '<div class="era" data-year="' + esc(y) + '">' +
           '<div class="era-year">' + esc(y) + '</div>' +
           '<div class="era-count">' + list.length + ' 段</div>' +
         '</div>';
@@ -102,6 +142,36 @@
 
     timeline.innerHTML = html;
     setupReel();
+
+    /* 总览时间线：年份速达 + 当前可视年份高亮 */
+    var line = document.getElementById('erasLine');
+    if (line) {
+      var eras = timeline.querySelectorAll('.era');
+      var btns = {};
+      eras.forEach(function (era) {
+        var y = era.dataset.year;
+        var b = document.createElement('button');
+        b.textContent = y;
+        b.addEventListener('click', function () {
+          timeline.scrollTo({ left: era.offsetLeft - 20, behavior: 'smooth' });
+        });
+        btns[y] = b;
+        line.appendChild(b);
+      });
+      /* 滚动时高亮当前年份 */
+      var curYear = null;
+      timeline.addEventListener('scroll', function () {
+        var x = timeline.scrollLeft + 60;
+        var y = null;
+        eras.forEach(function (era) {
+          if (era.offsetLeft <= x) y = era.dataset.year;
+        });
+        if (y && y !== curYear) {
+          curYear = y;
+          Object.keys(btns).forEach(function (k) { btns[k].classList.toggle('cur', k === y); });
+        }
+      }, { passive: true });
+    }
   }
 
   /* 长卷交互：滚轮映射横向 / 鼠标拖拽 / 箭头 / 进度条 */
@@ -272,6 +342,12 @@
     var t = trips[idx];
     document.title = (t.title || '行程') + ' · 山高路远，家在身边';
 
+    /* 开篇：编号 + 大年份 */
+    var noEl = document.getElementById('tNo');
+    var yrEl = document.getElementById('tYear');
+    if (noEl) noEl.textContent = 'No.' + String(idx + 1).padStart(2, '0') + ' — ' + String(trips.length).padStart(2, '0');
+    if (yrEl) yrEl.textContent = t.year || '';
+
     var cover = document.getElementById('tCover');
     if (cover) { cover.src = t.coverBig || t.cover || ''; cover.alt = t.title || ''; }
 
@@ -293,15 +369,46 @@
 
       flow.querySelectorAll('.flow-pic').forEach(function (box) {
         box.addEventListener('click', function () {
-          var p = photos[parseInt(box.dataset.idx, 10)];
-          openLightbox(p.src, p.caption);
+          var i = parseInt(box.dataset.idx, 10);
+          openLightbox(photos, i, t.date || '');
         });
       });
+
+      /* 照片进入视口时淡入上浮 */
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (en.isIntersecting) {
+              en.target.classList.add('seen');
+              io.unobserve(en.target);
+            }
+          });
+        }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+        flow.querySelectorAll('.flow-item').forEach(function (el) { io.observe(el); });
+      } else {
+        flow.querySelectorAll('.flow-item').forEach(function (el) { el.classList.add('seen'); });
+      }
+    }
+
+    /* --- 下一段预览卡 --- */
+    var next = idx + 1 < trips.length ? trips[idx + 1] : null;
+    var nt = document.getElementById('nextTrip');
+    if (nt) {
+      nt.innerHTML = next
+        ? '<a href="trip.html?id=' + encodeURIComponent(next.id) + '">' +
+            '<div class="nt-pic"><img src="' + esc(next.cover || '') + '" alt="" loading="lazy"></div>' +
+            '<div class="nt-body">' +
+              '<div class="nt-label">Next Journey</div>' +
+              '<div class="nt-title">' + esc(next.title || '') + '</div>' +
+              '<div class="nt-date">' + esc(next.date || '') + (next.place ? '　' + esc(next.place) : '') + '</div>' +
+              '<div class="nt-more">翻开下一段</div>' +
+            '</div>' +
+          '</a>'
+        : '';
     }
 
     /* --- 上一段 / 下一段（数组按时间从早到晚） --- */
     var prev = idx - 1 >= 0 ? trips[idx - 1] : null;
-    var next = idx + 1 < trips.length ? trips[idx + 1] : null;
     var parts = [];
     parts.push(prev
       ? '<a href="trip.html?id=' + encodeURIComponent(prev.id) + '">← ' + esc(prev.title) + '</a>'

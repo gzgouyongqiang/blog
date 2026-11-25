@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>行程 · 山高路远，家在身边</title>
 <meta name="description" content="一家人的生活记录">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='88'>⛰</text></svg>">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="stylesheet" href="assets/blog-fonts.css">
 <link rel="stylesheet" href="assets/blog.css">
 </head>
-<body>
+<body class="main-fade">
 
 <nav class="nav">
   <div class="nav-in">
@@ -20,6 +21,12 @@
 </nav>
 
 <div id="tripRoot">
+
+  <div class="trip-head">
+    <div class="trip-head-no" id="tNo"></div>
+    <div class="trip-head-year" id="tYear"></div>
+    <div class="trip-head-rule"></div>
+  </div>
 
   <header class="trip-hero">
     <div class="trip-hero-in">
@@ -36,6 +43,8 @@
 
   <div class="flow" id="flow"></div>
 
+  <div class="next-trip" id="nextTrip"></div>
+
   <div class="trip-end" id="tripEnd"></div>
 
 </div>
@@ -45,8 +54,15 @@
 </footer>
 
 <div class="lightbox" id="lightbox">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="关闭">×</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="上一张">←</button>
   <img id="lightboxImg" alt="">
-  <div class="lightbox-cap" id="lightboxCap"></div>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="下一张">→</button>
+  <div class="lightbox-cap">
+    <div class="lb-cap-main" id="lbCap"></div>
+    <div class="lb-cap-note" id="lbNote"></div>
+    <div class="lb-cap-date" id="lbDate"></div>
+  </div>
 </div>
 
 <script src="assets/data.js"></script>
